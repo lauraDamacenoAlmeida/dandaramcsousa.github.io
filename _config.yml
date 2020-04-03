@@ -32,7 +32,7 @@ author: Dandara Sousa
 
 
 # Build settings
-#theme: jekyll-theme-clean-blog
+remote-theme: jekyll-theme-clean-blog
 plugins:
   - jekyll-feed
 
