@@ -32,10 +32,11 @@ author: Dandara Sousa
 
 
 # Build settings
-#theme: jekyll-theme-clean-blog
-remote-theme: BlackrockDigital/startbootstrap-clean-blog-jekyll 
+theme: jekyll-theme-clean-blog
+#remote-theme: https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
