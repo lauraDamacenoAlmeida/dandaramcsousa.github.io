@@ -27,11 +27,20 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dandaramcsousa
 github_username:  dandaramcsousa
+linkedin_username: dandaramcsousa
+author: Dandara Sousa
+
 
 # Build settings
-theme: jekyll-theme-clean-blog
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+
+#theme: jekyll-theme-clean-blog
+remote-theme:  BlackrockDigital/startbootstrap-clean-blog-jekyll 
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
