@@ -32,7 +32,8 @@ author: Dandara Sousa
 
 
 # Build settings
-remote-theme: jekyll-theme-clean-blog
+#theme: jekyll-theme-clean-blog
+remote-theme: BlackrockDigital/startbootstrap-clean-blog-jekyll 
 plugins:
   - jekyll-feed
 
