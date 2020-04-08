@@ -3,7 +3,18 @@ layout: page
 title: Posts
 background: ''
 ---
+<head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163090919-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-163090919-1');
+  </script>
+  </head>
+<body>
 {% for post in paginator.posts %}
 
 <article class="post-preview">
@@ -46,3 +57,4 @@ background: ''
 </div>
 
 {% endif %}
+</body>
