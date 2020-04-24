@@ -20,10 +20,10 @@
 
 title: Dandara Sousa
 email: dandaramcsousa@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: #>-  this means to ignore newlines until "baseurl:"
   Mestranda e graduada em Ciência da Computação pela Universidade Federal de Campina Grande. 
   Pylady no Pyladies Paraíba, membro-fundadora do Elas@Computação UFCG e membro do WTM Paraíba.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dandaramcsousa
 github_username:  dandaramcsousa
