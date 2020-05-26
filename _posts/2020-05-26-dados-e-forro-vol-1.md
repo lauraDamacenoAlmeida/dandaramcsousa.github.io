@@ -2,7 +2,7 @@
 layout: post
 title: "Análise de Dados e Forró"
 subtitle: "Ao Vivo em Salvador, Vol. 1"
-date: 2020-05-26 18:18:00 -0300
+date: 2020-05-26 18:00:00 -0300
 background: ''
 ---
 Junho está batendo na porta, eu já sinto o cheiro de São João e como mulher nascida na cidade do [Maior São João do Mundo](https://www.youtube.com/watch?v=E9-BpjIvA6s) imaginem vocês, que diante desta pandemia, *agora estou sofrendo*. Depois de uma saudável discussão no PyLadies Paraíba sobre as melhores músicas e o melhor álbum da Calcinha Preta, senti o dever social de honrar o meu lado *fã da banda Calcinha Preta que declara seu amor e vira manchete dos jornais* para provar minha opinião. E assim originou-se minha saga (não a do vaqueiro) que começo a narrar neste post e vai seguir por mais alguns.
