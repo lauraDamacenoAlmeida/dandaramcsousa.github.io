@@ -6,7 +6,7 @@ date: 2020-06-02 12:10:00 -0300
 background: ''
 ---
 
-*Como foi tão bom a gente se encontrar* no volume 1 e que bom que você está aqui novamente.
+*Como foi tão bom a gente se encontrar* no [volume 1](https://dandaramcsousa.github.io/2020/05/26/dados-e-forro-vol-1.html) e que bom que você está aqui novamente.
 
 ![baby doll](https://thumbs.gfycat.com/CreativeGrandAfricanpiedkingfisher.webp)
 
