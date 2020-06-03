@@ -6,7 +6,11 @@ date: 2020-06-02 12:10:00 -0300
 background: ''
 ---
 
-*Como foi tão bom a gente se encontrar* no volume 1 e que bom que você está aqui novamente. Hoje, vamos estruturar nossa conversa anterior em código. Que pode ser feito no Google Colab ou em qualquer editor que você prefira. Porém qual outro editor teria corgis e gatinhos passeando enquanto você programa?
+*Como foi tão bom a gente se encontrar* no volume 1 e que bom que você está aqui novamente.
+
+![baby doll](https://thumbs.gfycat.com/CreativeGrandAfricanpiedkingfisher.webp)
+
+ Hoje, vamos estruturar nossa conversa anterior em código. Que pode ser feito no Google Colab ou em qualquer editor que você prefira. Porém qual outro editor teria corgis e gatinhos passeando enquanto você programa?
 
 <img src="/img/forroedados/image01.png" width="95%">
 
