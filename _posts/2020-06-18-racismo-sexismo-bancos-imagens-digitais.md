@@ -37,6 +37,6 @@ Links Úteis:
 * [Comunidades, Algoritmos e Ativismos Digitais: Olhares Afrodiaspóricos](https://www.researchgate.net/publication/339954112_Comunidades_Algoritmos_e_Ativismos_Digitais_olhares_afrodiasporicos)
 * [Data Feminism](https://bookbook.pubpub.org/data-feminism)
 * [Live do Clube de Leitura da InspirAda na Computação](https://www.youtube.com/watch?v=9ZibRxOBllU) 
-* [LinkedIn da Fernanda Carrera](https://www.linkedin.com/in/fernandacarrera/)
+* [Twitter da Fernanda Carrera](https://twitter.com/nandacarrera)
 * [Twitter da InspirAda na Computação](https://twitter.com/InspirAdaNaComp)
 * [Twitter do Tarcizio Silva](https://twitter.com/tarciziosilva)
