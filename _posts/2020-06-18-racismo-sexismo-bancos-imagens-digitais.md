@@ -9,6 +9,7 @@ background: ''
 Neste post faço uma reflexão baseada na minha contribuição para o Clube de Leitura do Inspirada na Computação que está comentando semanalmente o livro "Comunidades, Algoritmos e Ativismos Digitais: Olhares Afrodiaspóricos" organizado pelo Tarcizio Silva. O capítulo em questão é o 08 com o artigo "Racismo e Sexismo em Bancos de Imagens Digitais: Análise de Resultados de Busca e Atribuição de Relevância na Dimensão Financeira/Profissional" da Fernanda Carrera.
 
 <img src="https://pbs.twimg.com/media/EYT8RlaXYAIcEtF.jpg" alt="Foto do livro tuitada pelo Tarcizio Silva" width="85%">
+
 <em>Foto do livro [tuitada](https://twitter.com/tarciziosilva/status/1262411502956544005) pelo Tarcizio Silva</em>
 
 No artigo, a autora Fernanda Carrera aborda os preconceitos e estereótipos que são reproduzidos pelos bancos de imagens digitais, através de sua pesquisa, onde realizou a coleta de imagens dadas como mais relevantes em três bancos de imagens digitais diferentes (Shutterstock, Stockphotos e Getty Images). O artigo está no capítulo 08 do livro Comunidades, Algoritmos e Ativismos Digitais: Olhares Afrodiaspóricos que foi organizado pelo Tarcízio Silva e está com sua versão em pdf com acesso gratuito [aqui](https://www.researchgate.net/publication/339954112_Comunidades_Algoritmos_e_Ativismos_Digitais_olhares_afrodiasporicos). 
