@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Racismo e Sexismo em Banco de Imagens Digitais"
+title: "Racismo e Sexismo em Bancos de Imagens Digitais"
 subtitle: "Contribuição para o Clube de Leitura do InspirAda - Capítulo 08"
 date: 2020-06-18 18:30:00 -0300
 background: ''
