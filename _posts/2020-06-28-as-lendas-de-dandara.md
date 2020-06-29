@@ -40,7 +40,7 @@ Para quem passa trinta minutos falando comigo, sabe o quanto me orgulho da comun
 
 Com o grupo perdi toda e qualquer vergonha de um palco, até porque sempre me colocam na roda para falar em público. Aprendi a entender minha capacidade de montar e mentorar um minicurso, e poucas coisas me dão tanto prazer quanto passar um dia inteiro ensinando python para uma turma. Desenvolvi a prática habilidade de convencimento,  para trazer novas garotas para o PyLadies, e me divirto demais quando alguém diz que entrou na comunidade depois de uma conversa comigo.
 
-<img src="/img/comunidades/pyladiespbday.jpg" alt="Foto do PyLadies Day 2019" width="85%">
+<img src="/img/comunidades/pyladiespbday.JPG" alt="Foto do PyLadies Day 2019" width="85%">
 
 <em>Foto do PyLadies Day 2019.</em>
 
