@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "As lendas de Dandara"
-subtitle: "O espírito de comunidade que habita em mim, saúda o espírito de habita em você."
+subtitle: "O espírito de comunidade que habita em mim, saúda o espírito de comunidade que habita em você."
 date: 2020-06-28 20:30:00 -0300
 background: '../img/elasepyladies'
 ---
@@ -10,7 +10,7 @@ Há um bom tempo eu sinto que devo esse post. Talvez devesse ter sido o meu “h
 
 Entrei para Ciência da Computação em 2014, fiz grandes amigos desde a fila de matrícula no curso e posso afirmar que nunca me senti sozinha na minha estadia de graduanda. Meus amigos daquela época são uma segunda família que tenho e sem eles eu jamais teria terminado o curso. Fizemos quase de tudo juntos, estudamos, trabalhamos, bagunçamos, choramos, sorrimos… Mas Dandara é um bichinho social totalmente ciente da realidade dela enquanto mulher na computação. Sempre soube que seria minoria, desde quando em 2009 decidi fazer o curso. 
 
-Por sorte, destino ou aleatoriedade da vida,  comecei a pesquisar sobre mulheres na computação com a professora Lívia, que era uma das minhas referências no curso. Nas reuniões na sala dela, também virava e mexia tinha pitaco de Raquel, outra professora, também referência para mim, que ficava na mesa vizinha. Em 2017  participei da organização de uma Semana Acadêmica de Ciência da Computação na universidade, e os professores que estavam liderando a organização decidiram que deveria ter um espaço na programação para as mulheres do corpo docente e discente. 
+Por sorte, destino ou aleatoriedade da vida, comecei a pesquisar sobre mulheres na computação com a professora Lívia, que era uma das minhas referências no curso. Nas reuniões na sala dela, também virava e mexia tinha pitaco de Raquel, outra professora, também referência para mim, que ficava na mesa vizinha. Em 2017  participei da organização de uma Semana Acadêmica de Ciência da Computação na universidade, e os professores que estavam liderando a organização decidiram que deveria ter um espaço na programação para as mulheres do corpo docente e discente. 
 
 E ali, meus caros colegas, naquele belíssimo dia de maio de 2017 minha vida tomou um rumo que nem nos meus melhores sonhos poderia imaginar. As professoras Raquel e Lívia mandaram um e-mail para mim,  em resumo um “bora juntar essas garotas?”  e eu com toda certeza nunca nego um “bora”, aceitei. Fizemos a convocação e lotamos o auditório do Laboratório de Sistemas Distribuídos (LSD para os íntimos). Ali estavam alunas recém-chegadas, alunas quase graduadas, alunas da pós, professoras… E deu tudo tão certo, tão certo que ali mesmo montamos um grupo no whatsapp e batizamos de Elas@Computação. 
 
@@ -38,7 +38,7 @@ O plano saiu do papel rapidinho. Andressa chegou para mim, dizendo que a gente t
 
 Para quem passa trinta minutos falando comigo, sabe o quanto me orgulho da comunidade do PyLadies Paraíba. Desde 2018 estamos ativas em minicursos, palestras, rodas de conversa, e fofoca também, eventos e mais eventos… O PyLadies Paraíba hoje é um grupo que está presente em todo canto do estado. Conseguimos manter nosso capítulo ativo mesmo sem estar fisicamente presentes. Nessa caminhada muitas chegaram para dividir as tarefas de organização, para ajudar a estruturar e diversificar nossa visão. 
 
-Com o grupo perdi toda e qualquer vergonha de um palco, até porque sempre me colocam na roda para falar em público. Aprendi a entender minha capacidade de montar e mentorar um minicurso, e poucas coisas me dão tanto prazer quanto passar um dia inteiro ensinando python para uma turma. Desenvolvi a prática habilidade de convencimento,  para trazer novas garotas para o PyLadies, e me divirto demais quando alguém diz que entrou na comunidade depois de uma conversa comigo.
+Com o grupo perdi toda e qualquer vergonha de um palco, até porque sempre me colocam na roda para falar em público. Aprendi a entender minha capacidade de montar e mentorar um minicurso, e poucas coisas me dão tanto prazer quanto passar um dia inteiro ensinando python para uma turma. Desenvolvi a prática habilidade de convencimento, para trazer novas garotas para o PyLadies, e me divirto demais quando alguém diz que entrou na comunidade depois de uma conversa comigo.
 
 <img src="/img/comunidades/pyladiespbday.JPG" alt="Foto do PyLadies Day 2019" width="85%">
 
