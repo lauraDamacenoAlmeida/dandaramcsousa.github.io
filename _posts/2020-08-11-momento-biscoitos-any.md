@@ -6,7 +6,8 @@ date: 2020-08-11 19:00:00 -0300
 background: ''
 ---
 
-<img src="/img/momentobiscoitos/any.JPEG" alt="Foto de Any de turbate" width="30%" style="float: left">
+<img src="/img/momentobiscoitos/any.jpeg" alt="Foto de Any de turbante" width="30%" style="float: left">
+
  O **#momentobiscoitos** começa aqui com ninguém mais, ninguém menos que a inspiração para esse projeto. Any se descreve como **Graduada em Análise e Desenvolvimento de Sistemas (Unopar) Bulidora de Dados, Leitora Maluca e PagoDev**. Eu diria que, além disso, ela é uma das mulheres mais fortes que Pernambuco já fez, que torna esse mundo um lugar muito mais sensato e melhor de se viver. Ela é uma amiga/irmã que veio enviada diretamente das deusas PyLadianas e que não consigo ficar sem. Tenho um orgulho imenso dessa mulher que está aniversariando hoje e deixo aqui, com vocês, um pouquinho dela para vocês ficarem com um crush de amizade.
  
  **1. Você é de longe uma das pessoas que eu mais admiro na disseminação da tecnologia como meio para facilitar vida da sociedade. Não só das pessoas que seguem um padrão, mas de *todas*. Como isso começou a surgir para você e se tornou uma parte tão importante?**
