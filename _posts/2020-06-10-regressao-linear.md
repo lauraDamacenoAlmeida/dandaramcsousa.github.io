@@ -3,11 +3,12 @@ layout: post
 title: "Regressão Linear?"
 subtitle: "Um dos modelos de machine learning mais famosos é a Regressão linear, mas você sabe o que ele é e como funciona?"
 date: 2020-04-01 20:30:00 -0300
-background: '/img/cientista-dados/1.jpg'
+background: '/img/regressao-linear/1.jpg'
 ---
-
+<img src="https://miro.medium.com/max/1400/1*YC_sAM5AZFmkNeol4BdynA.png" width="50%">
 O termo “Regressão” surgiu em 1885 com o antropólogo, matemático e estatístico Francis Galton. As primeiras aplicações do método surgiram na Antropometria, ou seja, estudo das medidas e da matemática dos corpos humanos.
 Ao estudar as estaturas de pais e filhos, Galton observou que filhos de pais com altura baixa em relação à média tendem a ser mais altos que seus pais, e filhos de pais com estatura alta em relação à média tendem a ser mais baixos que seus pais, ou seja, as alturas dos seres humanos em geral tendem a **regredir** à média.
+
 Regressão linear é um tipo de algoritmo supervisionado, portanto antes de entender como funciona o algoritmo é importante conhecer o que seria aprendizado supervisionado.
 
 ## Conceitos importantes
@@ -138,6 +139,7 @@ Para testar o modelo é utilizado a função .predict( ), passando por parâmetr
 ## Se lembram da equação da regressão linear?
 
 <img src="https://miro.medium.com/max/1400/0*E-6Yud1vgsM6pV6u" width="85%">
+
 Para pegar os valores de w0, é utilizado a função .intercept_, já os valores de w1 pode ser adquirido com a função .coef_.
 
 <img src="https://miro.medium.com/max/1400/1*hlBJYU3Y2rDot4KzzXQvuQ.png" width="85%">
