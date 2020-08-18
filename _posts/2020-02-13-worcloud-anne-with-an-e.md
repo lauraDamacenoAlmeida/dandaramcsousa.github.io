@@ -3,7 +3,7 @@ layout: post
 title: "Gerando wordcloud com os tweets sobre a série “Anne with an E”"
 subtitle: "Nada melhor que juntar duas coisas que eu adoro: série e tech. Vamos juntas (os) nessa aventura?"
 date: 2020-02-13 18:00:00 -0300
-background: '../img/anne-with-an-e/artigo-3.png'
+background: './img/anne-with-an-e/artigo-3.png'
 ---
 
 

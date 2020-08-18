@@ -3,7 +3,7 @@ layout: post
 title: "Quem quer ser um cientista de dados?"
 subtitle: "Dicas da Laurinha pra você que quer entrar na área!"
 date: 2020-04-01 20:30:00 -0300
-background: '../img/cientista-dados/1.jpg'
+background: './img/cientista-dados/1.jpg'
 ---
 
 > Muitas pessoas me perguntam como entrar na área de dados, e nesse post passarei algumas dicas e trilhas que podem ser bem interessantes para vocês que estão iniciando.

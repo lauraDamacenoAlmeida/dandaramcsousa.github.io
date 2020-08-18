@@ -3,7 +3,7 @@ layout: post
 title: "O que você precisa saber antes de construir um chatbot? (Resenha)"
 subtitle: "Esse post foi baseado na minha apresentação sobre como começar com chatbots para a comunidade AI Girls."
 date: 2019-07-10 17:19:00 -0300
-background: '../img/construir-um-chatbot/artigo.gif'
+background: './img/construir-um-chatbot/artigo.gif'
 ---
 
 
