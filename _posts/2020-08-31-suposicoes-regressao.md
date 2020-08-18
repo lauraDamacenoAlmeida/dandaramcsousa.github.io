@@ -3,7 +3,7 @@ layout: post
 title: "Entendendo Regressão Linear: as suposições por trás de tudo!"
 subtitle: "Esse artigo teve como inspiração o curso de Ciência de dados disponibilizado pela Packt, onde em um dos capítulos foi apresentado essas premissas/suposições e eu achei super interessante trazer esse tópico!"
 date: 2020-04-01 20:30:00 -0300
-background: '/img/suposicoes-regressao/1.jpg'
+background: '/img/suposicoes-regressao/1.png'
 ---
 
 A regressão linear é uma análise que avalia se uma ou mais variáveis ​​preditivas explicam a variável dependente. Os modelos lineares são paramétricos, ou seja fazem algumas suposições sobre os dados que analisa. Quando essas suposições não são atendidas, os resultados de análise de regressão podem ser enganosos e o modelo pode não ter um bom desempenho.
