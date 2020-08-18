@@ -24,10 +24,10 @@ description: #>-  this means to ignore newlines until "baseurl:"
   Futura cientista da Computação, Pylady no Pyladies São Paulo, cofundadora do AI Girls e organizadora da comunidade DevAI Women.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lauradamacenoalmeida.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  lauradamacenoalmeid
+github_username:  lauradamacenoalmeida
 linkedin_username: laura-damaceno
 author: Laura Damaceno de Almeida
-background: "/img/bg-home-2.jpg"
+background: "/img/bg-home-2.jpeg"
 
 google_analytics: 'UA-163090919-1'
 
