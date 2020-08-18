@@ -156,7 +156,7 @@ f(NU_NOTA_CN, NU_NOTA_CH, NU_NOTA_LC, NU_NOTA_REDACAO) = -5.255134 + 0.335875 * 
 <img src="https://miro.medium.com/max/1000/0*a6TED5gkNCv3YS_B.gif" width="85%">
 
 Pois bem pequeno gafanhoto, quando fazemos a seleção de features evitamos que atributos irrelevantes podem causar um efeito negativos no modelo, e além disso evitar a *maldição da dimensionalidade*, portanto à medida que aumenta o número de dimensões de seus dados, eles se tornam mais esparsos, o que pode dificultar a obtenção de um padrão.
-Pois bem, mas vamos testar com as 15 features que a gente plotou na matriz de confusão: ‘TP_ESCOLA’,’TP_PRESENCA_CH’,’TP_PRESENCA_CN’,’TP_PRESENCA_LC’,’NU_IDADE’,’TP_ST_CONCLUSAO’, ’TP_ANO_CONCLUIU’, ‘TP_ENSINO’,’IN_TREINEIRO’,’NU_NOTA_CN’,’NU_NOTA_CH’,’NU_NOTA_LC’,’TP_STATUS_REDACAO’,’NU_NOTA_REDACAO’
+Pois bem, mas vamos testar com as 15 features que a gente plotou na matriz de confusão: ‘TP_ESCOLA’, ’TP_PRESENCA_CH’,’TP_PRESENCA_CN’,’TP_PRESENCA_LC’, ’NU_IDADE’, ’TP_ST_CONCLUSAO’, ’TP_ANO_CONCLUIU’, ‘TP_ENSINO’,’IN_TREINEIRO’,’NU_NOTA_CN’,’NU_NOTA_CH’, ’NU_NOTA_LC’, ’TP_STATUS_REDACAO’, ’NU_NOTA_REDACAO’
 
 <img src="https://miro.medium.com/max/1400/1*-_jxAiHtpOsst05vNyDnnA.png" width="85%">
 
