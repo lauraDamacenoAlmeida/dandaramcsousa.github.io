@@ -59,4 +59,4 @@ Elas surgiram por conta da pouca participação de mulheres na área de tecnolog
 <img src="/img/comunidades/artigo-6.jpeg" alt="Primeiro evento do DevAI Women em 2020" width="85%">
 
 Então foi isso galera, espero que vocês meninas não desistam dos seus sonhos e está tudo bem você não saber logo de cara com o que quer trabalhar, a área de TI é enorme e depois explorar algumas dessas áreas você vai conseguir se encontrar.
-A Melzinha fez uma ![lista](https://listadasminas.meninah.dev/) com algumas comunidades femininas de tecnologia.
+A Melzinha fez uma [lista](https://listadasminas.meninah.dev/) com algumas comunidades femininas de tecnologia.
