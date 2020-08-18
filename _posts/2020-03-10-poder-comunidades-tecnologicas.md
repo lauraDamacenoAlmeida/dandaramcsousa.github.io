@@ -3,7 +3,7 @@ layout: post
 title: "O poder das comunidades tecnológicas femininas no processo de desenvolvimento e empoderamento de mulheres"
 subtitle: "Um pouquinho sobre as minhas aventuras e como eu me encontrei nas comunidades femininas de tecnologia"
 date: 2020-03-10 18:30:00 -0300
-background: './img/comunidades/comunidade-2.jpeg'
+background: '/img/comunidades/comunidade-2.jpeg'
 ---
 
 A área de tecnologia durante muito tempo foi considerada uma área masculina, mesmo as grandes descobertas dessa área terem sido feitas por mulheres, como Ada Lovelace e Grace Hopper.

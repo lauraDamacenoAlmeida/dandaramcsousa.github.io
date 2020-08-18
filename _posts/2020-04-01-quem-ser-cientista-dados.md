@@ -3,7 +3,7 @@ layout: post
 title: "Quem quer ser um cientista de dados?"
 subtitle: "Dicas da Laurinha pra você que quer entrar na área!"
 date: 2020-04-01 20:30:00 -0300
-background: './img/cientista-dados/1.jpg'
+background: '/img/cientista-dados/1.jpg'
 ---
 
 > Muitas pessoas me perguntam como entrar na área de dados, e nesse post passarei algumas dicas e trilhas que podem ser bem interessantes para vocês que estão iniciando.
@@ -71,11 +71,13 @@ Ao contrário do que as pessoas pensam, existem outros profissionais na área al
 <img src="/img/cientista-dados/artigo-8.png" alt="Engenharia de dados" width="40%">
 
 A área de engenharia de dados fica responsável por projetar, criar, integrar e manter dados de várias fontes, além disso desenvolvem, constroem, testam e dão manutenção em arquiteturas, como os sistemas de processamento de dados em larga escala. Eles tornam os dados prontos para utilização, então realizam a coleta e o pré processamento dos deles.
+
 **Conhecimentos necessários:** Python, R, Java, SQL, NoSQL, Hadoop, Spark.
 
 <img src="/img/cientista-dados/artigo-9.png" alt="Analista de dados" width="40%">
 
 A área de análise de dados geralmente coletam dados e criam relatórios de BI para o uso interno e de clientes.Os profissionais que atuam nela são geralmente iniciantes na área de dados com habilidades em programação, negócios e matemática.
+
 **Conhecimentos necessários:** Python, R, ferramentas de visualização (por exemplo: Tableu, Power BI).
 
 <img src="/img/cientista-dados/artigo-10.png" alt="Ciência de dados" width="40%">
@@ -83,6 +85,7 @@ A área de análise de dados geralmente coletam dados e criam relatórios de BI 
 
 A área de ciência de dados reunem e limpam grandes conjuntos de dados, criam modelos matemáticos e interpretam descobertas em soluções de negócios e como diz uma grande amiga, eles são as fadas que transformam os dados em conhecimento e valor. E quem não gostaria de ser uma fada?!
 Os profissionais nessa área têm normalmente experiência em matemática, programação e análise de negócios.
+
 **Conhecimentos necessários:** Python, R, SQL, NoSQL, matemática, modelos de machine learning.
 
 
