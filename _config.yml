@@ -18,17 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Dandara Sousa
-email: dandaramcsousa@gmail.com
+title: Laura Damaceno de Almeida
+email: lauradamaceno60107@gmail.com
 description: #>-  this means to ignore newlines until "baseurl:"
-  Mestranda e graduada em Ciência da Computação pela Universidade Federal de Campina Grande. 
-  Pylady no Pyladies Paraíba, membro-fundadora do Elas@Computação UFCG e membro do WTM Paraíba.
+  Futura cientista da Computação, Pylady no Pyladies São Paulo, cofundadora do AI Girls e organizadora da comunidade DevAI Women.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dandaramcsousa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: dandaramcsousa
-github_username:  dandaramcsousa
-linkedin_username: dandaramcsousa
-author: Dandara Sousa
+url: "https://lauradamacenoalmeida.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  lauradamacenoalmeid
+linkedin_username: laura-damaceno
+author: Laura Damaceno de Almeida
 background: "/img/bg-home-2.jpg"
 
 google_analytics: 'UA-163090919-1'
