@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Regressão Linear?"
+title: "Entendendo Regressão Linear: as suposições por trás de tudo!"
 subtitle: "Esse artigo teve como inspiração o curso de Ciência de dados disponibilizado pela Packt, onde em um dos capítulos foi apresentado essas premissas/suposições e eu achei super interessante trazer esse tópico!"
 date: 2020-04-01 20:30:00 -0300
 background: '/img/suposicoes-regressao/1.jpg'
