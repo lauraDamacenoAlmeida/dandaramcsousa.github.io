@@ -68,17 +68,17 @@ Tem um artigo bem legal que eu escrevi para o blog da AI Girls, que eu explico o
 
 Ao contrário do que as pessoas pensam, existem outros profissionais na área além do cientista de dados, há 3 principais áreas: Engenharia de dados, analista de dados e cientista de dados, que atuam de formas diferentes e necessitam de skills diferentes.
 
-<img src="/img/cientista-dados/artigo-8.png" alt="Engenharia de dados" width="85%">
+<img src="/img/cientista-dados/artigo-8.png" alt="Engenharia de dados" width="40%">
 
 A área de engenharia de dados fica responsável por projetar, criar, integrar e manter dados de várias fontes, além disso desenvolvem, constroem, testam e dão manutenção em arquiteturas, como os sistemas de processamento de dados em larga escala. Eles tornam os dados prontos para utilização, então realizam a coleta e o pré processamento dos deles.
 **Conhecimentos necessários:** Python, R, Java, SQL, NoSQL, Hadoop, Spark.
 
-<img src="/img/cientista-dados/artigo-9.png" alt="Analista de dados" width="85%">
+<img src="/img/cientista-dados/artigo-9.png" alt="Analista de dados" width="40%">
 
 A área de análise de dados geralmente coletam dados e criam relatórios de BI para o uso interno e de clientes.Os profissionais que atuam nela são geralmente iniciantes na área de dados com habilidades em programação, negócios e matemática.
 **Conhecimentos necessários:** Python, R, ferramentas de visualização (por exemplo: Tableu, Power BI).
 
-<img src="/img/cientista-dados/artigo-10.png" alt="Ciência de dados" width="85%">
+<img src="/img/cientista-dados/artigo-10.png" alt="Ciência de dados" width="40%">
 
 
 A área de ciência de dados reunem e limpam grandes conjuntos de dados, criam modelos matemáticos e interpretam descobertas em soluções de negócios e como diz uma grande amiga, eles são as fadas que transformam os dados em conhecimento e valor. E quem não gostaria de ser uma fada?!
@@ -92,21 +92,21 @@ Se ficou curioso em saber mais sobre essas áreas tem o artigo da ![AI Girls](ht
 
 **Seja curiosa(o)!**
 
-<img src="/img/cientista-dados/artigo-11.png" width="85%">
+<img src="/img/cientista-dados/artigo-11.gif" width="85%">
 
 Esse é uma dica super especial. Um cientista por si só já é bastante curioso, e buscar sempre o “porquê” das coisas, a curiosidade fez o ser humano ter descobertas incríveis.
 O cientista de dados está a procura de entender os dados, “Porque isso aconteceu?”, “se eu colocar esse dado no meu modelo vai melhorar ou piorar? E se eu tirar?”. Então a curiosidade será sua grande aliada nessa jornada.
 
 **Tenha um mentor**
 
-<img src="/img/cientista-dados/artigo-12.png" width="85%">
+<img src="/img/cientista-dados/artigo-12.gif" width="85%">
 
 Para quem não sabe mentor é aquela pessoa mais experiente que compartilha os conhecimentos com você e te guia, e durante todo meu processo eu tive e tenho mentores. Se possível procure pessoas que já trabalham na área que consigam te auxiliar na sua jornada de mochileira(o).
 Atualmente eu tenho uma mentora que me auxiliou desde o início, tirando minhas dúvidas, me passando uma trilha de estudos e desafios para serem entregues e ela vêm me ajudando cada vez mais a evoluir.
 
 **Participe de comunidades e eventos que envolve a área de dados**
 
-<img src="/img/cientista-dados/artigo-13.png" width="85%">
+<img src="/img/cientista-dados/artigo-13.gif" width="85%">
 
 Atualmente existem bastantes comunidades de tecnologia, e porquê não teria para ciência de dados?!
 
@@ -127,7 +127,7 @@ Conecte-se com pessoas da área, troque uma idéia com elas no LinkedIn e pegue 
 
 **Leia artigos e ouça podcast!**
 
-<img src="/img/cientista-dados/artigo-14.png" width="85%">
+<img src="/img/cientista-dados/artigo-14.jpeg" width="85%">
 
 É importante estarmos sempre atentos com as mudanças e as novas tecnologias. Se você é uma pessoa que gosta de ler, eu recomendo os seguintes grupos sobre ciência de dados:
 
