@@ -43,19 +43,19 @@ Existem várias ferramentas que podemos utilizar, vou dividir em 2 sessões: uma
 #### Negócios:
 Essas ferramentas são usadas mais para fins comerciais, pois precisamos desde o inicio indicar para oque iremos utilizar esses bots, grande maioria delas são pagas.
 
-· ![ManyChat.com](https://manychat.com/)
-· ![Chatfuel](https://chatfuel.com/)
-· ![ChattyPeople](https://mobilemonkey.com/)
-· ![Botsify](https://botsify.com/)
-· ![Sequel](https://www.onsequel.com/)
-· ![Dialog Flow](https://cloud.google.com/dialogflow/docs/)
-· ![Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
-· ![Microsoft Bot Framework](https://dev.botframework.com/)
+· [ManyChat.com](https://manychat.com/)
+· [Chatfuel](https://chatfuel.com/)
+· [ChattyPeople](https://mobilemonkey.com/)
+· [Botsify](https://botsify.com/)
+· [Sequel](https://www.onsequel.com/)
+· [Dialog Flow](https://cloud.google.com/dialogflow/docs/)
+· [Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
+· [Microsoft Bot Framework](https://dev.botframework.com/)
 
 #### Pessoais:
-· ![Dialog Flow](https://cloud.google.com/dialogflow/docs/)
-· ![Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
-· ![Microsoft Bot Framework](https://dev.botframework.com/)
+· [Dialog Flow](https://cloud.google.com/dialogflow/docs/)
+· [Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
+· [Microsoft Bot Framework](https://dev.botframework.com/)
 
 #### Linguagens de programação:
 E claro temos a opção para quem gosta de colocar a mão na massa, atualmente grande parte das linguagens de programação tem bibliotecas para implementação de chatbots, é bem fácil de achá-las, só procurar no google **“chatbot+ linguagem de programação + plataforma(exemplo: Telegram, Messenger, etc)”.**
@@ -123,4 +123,4 @@ A gente ocultando essa informação dos usuários pode levar a perda de confian�
 
 Então é isso galera, já disponibilizei o link da minha apresentação e qualquer dúvida me chamem nas minha redes sociais.
 
-Aproveita e me segue nas redes sociais para companhar mais de perto os meus trabalhos ;), no ![Linkedin](https://www.linkedin.com/in/laura-damaceno/) e ![Instagram](https://instagram.com/laura_damaceno_almeida)
+Aproveita e me segue nas redes sociais para companhar mais de perto os meus trabalhos ;), no [Linkedin](https://www.linkedin.com/in/laura-damaceno/) e [Instagram](https://instagram.com/laura_damaceno_almeida)

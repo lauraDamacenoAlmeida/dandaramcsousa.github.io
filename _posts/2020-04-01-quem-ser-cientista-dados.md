@@ -33,7 +33,7 @@ Além disso tem a opção gratuita fornecida por algumas comunidades, entre elas
 <img src="/img/cientista-dados/artigo-4.gif" width="85%">
 
 Após você aprender sobre a linguagem de programação, recomendo vocês aprenderem as bibliotecas que são utilizadas na área. Eu vou dar o exemplo do python que é a linguagem que eu mais utilizo.
-As bibliotecas mais utilizadas no python são: ![pandas](https://pandas.pydata.org/docs/), ![numpy](https://numpy.org/), ![matplotlib](https://matplotlib.org/), ![seaborn](https://seaborn.pydata.org/) e ![scikit-learn](https://scikit-learn.org/). Então eu recomendo conhecer um pouco mais dessas bibliotecas, entender como mexer nelas, como manipular os dados usando elas, no caso do pandas e numpy: quais os tipos de dados que eles têm.
+As bibliotecas mais utilizadas no python são: [pandas](https://pandas.pydata.org/docs/), [numpy](https://numpy.org/),  [matplotlib](https://matplotlib.org/), [seaborn](https://seaborn.pydata.org/) e [scikit-learn](https://scikit-learn.org/). Então eu recomendo conhecer um pouco mais dessas bibliotecas, entender como mexer nelas, como manipular os dados usando elas, no caso do pandas e numpy: quais os tipos de dados que eles têm.
 
 (Obs: Se quiserem eu posso fazer artigos especiais sobre essas bibliotecas e como mexer em cada uma delas!).
 
@@ -43,7 +43,7 @@ As bibliotecas mais utilizadas no python são: ![pandas](https://pandas.pydata.o
 
 
 Dependendo da área que você for trabalhar conhecer banco de dados é essencial, pois os dados que são usados em análises e como entrada para os modelos de machine learning, são coletados do banco de dados.
-Portanto saber como fazer consultas no banco de dados é bem essencial nessa área. Existe dois tipos de bancos de dados, relacional e o não relacional para entender melhor os tipos de banco de dados, segue um artigo bem explicativo sobre isso do ![EAD Courses](https://medium.com/@EADCourses/o-que-%C3%A9-banco-de-dados-conceitos-e-tipos-de-banco-de-dados-5d5904da66e5).
+Portanto saber como fazer consultas no banco de dados é bem essencial nessa área. Existe dois tipos de bancos de dados, relacional e o não relacional para entender melhor os tipos de banco de dados, segue um artigo bem explicativo sobre isso do [EAD Courses](https://medium.com/@EADCourses/o-que-%C3%A9-banco-de-dados-conceitos-e-tipos-de-banco-de-dados-5d5904da66e5).
 Mas basicamente o banco de dados relacional é composto por tabelas, e elas tem um relacionamento entre elas, por exemplo: uma tabela que armazena os cursos de uma faculdade, chamada Curso e outra que armazena os alunos, chamada Aluno. Um aluno está matriculado à um curso específico, portanto nós temos um relacionamento entre a tabela Aluno e a tabela Curso. Já no banco de dados não relacional, não temos esse relacionamento, e é muito utilizado quando nós não temos uma estrutura bem definida nos dados.
 
 4. **Matemática**
@@ -52,7 +52,7 @@ Mas basicamente o banco de dados relacional é composto por tabelas, e elas tem 
 
 
 Na área de ciência de dados envolve bastante probabilidade e estatística, seja para escolher a métrica de avaliação do modelo, escolher o melhor modelo, entender a tendência dos dados e ao realizar análise exploratória nos dados.
-A comunidade do ![Pizza de dados](https://github.com/PizzaDeDados/datascience-pizza/blob/master/topicos/estatistica-e-matematica.md) fizeram uma trilha bem legal sobre matemática e estatística.
+A comunidade do [Pizza de dados](https://github.com/PizzaDeDados/datascience-pizza/blob/master/topicos/estatistica-e-matematica.md) fizeram uma trilha bem legal sobre matemática e estatística.
 
 5. **Algoritmos de Machine learning**
 
@@ -61,7 +61,7 @@ A comunidade do ![Pizza de dados](https://github.com/PizzaDeDados/datascience-pi
 
 Agora vamos para a parte mais legal na minha opinião na área de ciência de dados: Machine learning ou aprendizado de máquina.
 Aprendizado de máquina é uma sub-área da inteligência artificial e podemos defini-lá como uma representação matemática de um problema que queremos resolver. Existe 3 tipos de aprendizado de máquina: Supervisionado, não supervisionado e o por reforço.
-Tem um artigo bem legal que eu escrevi para o blog da AI Girls, que eu explico os ![tipos de machine learning](https://dev.to/aigirlsbr/afinal-o-que-e-machine-learning-ih5). Tem cursos bem legais e completos na Udemy, ![Alura](https://www.alura.com.br/formacao-machine-learning?gclid=Cj0KCQjw1Iv0BRDaARIsAGTWD1tBgOQQz4CTr3wbjKOBREB98UfFiWmv3grCZk6njjPMvLkOeCE5ubQaAsGmEALw_wcB), ![Coursera](https://www.coursera.org/learn/machine-learning), a trilha do ![Pizza de dados](https://github.com/PizzaDeDados/datascience-pizza/blob/master/topicos/aprendizado-de-maquina.md) e a ![live do AI Girls](https://www.youtube.com/watch?v=G1n3J1JtnGs) que a Daniela Gomes fez.
+Tem um artigo bem legal que eu escrevi para o blog da AI Girls, que eu explico os [tipos de machine learning](https://dev.to/aigirlsbr/afinal-o-que-e-machine-learning-ih5). Tem cursos bem legais e completos na Udemy, [Alura](https://www.alura.com.br/formacao-machine-learning?gclid=Cj0KCQjw1Iv0BRDaARIsAGTWD1tBgOQQz4CTr3wbjKOBREB98UfFiWmv3grCZk6njjPMvLkOeCE5ubQaAsGmEALw_wcB), [Coursera](https://www.coursera.org/learn/machine-learning), a trilha do [Pizza de dados](https://github.com/PizzaDeDados/datascience-pizza/blob/master/topicos/aprendizado-de-maquina.md) e a [live do AI Girls](https://www.youtube.com/watch?v=G1n3J1JtnGs) que a Daniela Gomes fez.
 
 ## E quais profissões existem na área dos dados?
 
@@ -86,7 +86,7 @@ Os profissionais nessa área têm normalmente experiência em matemática, progr
 **Conhecimentos necessários:** Python, R, SQL, NoSQL, matemática, modelos de machine learning.
 
 
-Se ficou curioso em saber mais sobre essas áreas tem o artigo da ![AI Girls](https://dev.to/aigirls/cientista-vs-engenheira-de-dados-qual-carreira-escolher-11i7), do ![Data Hackers](https://medium.com/data-hackers/como-virar-analista-de-dados-do-zero-em-1-ano-b654faa7dde9), e o repositório do ![Pizza de Dados](https://github.com/PizzaDeDados/datascience-pizza).
+Se ficou curioso em saber mais sobre essas áreas tem o artigo da [AI Girls](https://dev.to/aigirls/cientista-vs-engenheira-de-dados-qual-carreira-escolher-11i7), do [Data Hackers](https://medium.com/data-hackers/como-virar-analista-de-dados-do-zero-em-1-ano-b654faa7dde9), e o repositório do [Pizza de Dados](https://github.com/PizzaDeDados/datascience-pizza).
 
 ## Agora vai algumas dicas pessoais para vocês que querem entrar em alguma dessas áreas.
 
@@ -111,10 +111,10 @@ Atualmente eu tenho uma mentora que me auxiliou desde o início, tirando minhas 
 Atualmente existem bastantes comunidades de tecnologia, e porquê não teria para ciência de dados?!
 
 Além dessas que eu vou citar diversas comunidades realizam eventos ou meetups sobre ciência de dados, então fiquem ligados nos eventos.
-* ![AI Girls](https://aigirlsbr.github.io/)
-* ![Escola Livre de IA](http://escolalivre-ia.com.br/)
+* [AI Girls](https://aigirlsbr.github.io/)
+* [Escola Livre de IA](http://escolalivre-ia.com.br/)
 * Woman in Data Science (Wids)
-* ![Woman in Machine learning & Data Science(WIMLDS)](https://www.meetup.com/pt-BR/Sao-Paulo-Women-in-Machine-Learning-Data-Science/)
+* [Woman in Machine learning & Data Science(WIMLDS)](https://www.meetup.com/pt-BR/Sao-Paulo-Women-in-Machine-Learning-Data-Science/)
 * Tangerines Data Analytics
 * Pyladies São Paulo (workshops e grupos de estudos)
 * R-Ladies(workshops)
@@ -131,19 +131,19 @@ Conecte-se com pessoas da área, troque uma idéia com elas no LinkedIn e pegue 
 
 É importante estarmos sempre atentos com as mudanças e as novas tecnologias. Se você é uma pessoa que gosta de ler, eu recomendo os seguintes grupos sobre ciência de dados:
 
-* ![DataHackers](https://medium.com/data-hackers)
-* ![Pizza de dados](https://medium.com/pizzadedados)
-* ![Towards Data Science](https://towardsdatascience.com/)
-* ![Turing Talks](https://medium.com/turing-talks)
-* ![Machina Sapiens](https://medium.com/machina-sapiens)
-* ![Nightingale](https://medium.com/nightingale)
+* [DataHackers](https://medium.com/data-hackers)
+* [Pizza de dados](https://medium.com/pizzadedados)
+* [Towards Data Science](https://towardsdatascience.com/)
+* [Turing Talks](https://medium.com/turing-talks)
+* [Machina Sapiens](https://medium.com/machina-sapiens)
+* [Nightingale](https://medium.com/nightingale)
 
 Se você curte podcast, eu recomendo esses canais:
-* ![IBM Analytics Insights](https://play.acast.com/s/ibmanalyticsinsightspodcasts)
-* ![Pizza de dados](https://podcast.pizzadedados.com/)
-* ![Data Hackers](https://medium.com/data-hackers/confira-o-podcast-de-data-science-e-machine-learning-do-data-hackers-28d4659843b7)
+* [IBM Analytics Insights](https://play.acast.com/s/ibmanalyticsinsightspodcasts)
+* [Pizza de dados](https://podcast.pizzadedados.com/)
+* [Data Hackers](https://medium.com/data-hackers/confira-o-podcast-de-data-science-e-machine-learning-do-data-hackers-28d4659843b7)
 
-E por hoje é tudo pessoal!! Aproveita e me segue nas redes sociais para companhar mais de perto os meus trabalhos ;), no ![Linkedin](https://www.linkedin.com/in/laura-damaceno/) e ![Instagram](https://instagram.com/laura_damaceno_almeida)
+E por hoje é tudo pessoal!! Aproveita e me segue nas redes sociais para companhar mais de perto os meus trabalhos ;), no [Linkedin](https://www.linkedin.com/in/laura-damaceno/) e [Instagram](https://instagram.com/laura_damaceno_almeida)
 
 
 

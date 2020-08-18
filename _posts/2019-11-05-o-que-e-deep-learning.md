@@ -61,14 +61,14 @@ Estes são só alguns exemplos de bibliotecas e frameworks que podemos implement
 <img src="/img/deep-learning/artigo-6.png" width="80%">
 
 **Linguagem: Python**
-* ![Keras](https://keras.io/)
-* ![TensorFlow](https://www.tensorflow.org/)
-* ![Pytorch](https://pytorch.org/)
-* ![Theano](http://deeplearning.net/software/theano/)
-* ![Caffe](https://caffe.berkeleyvision.org/)
+* [Keras](https://keras.io/)
+* [TensorFlow](https://www.tensorflow.org/)
+* [Pytorch](https://pytorch.org/)
+* [Theano](http://deeplearning.net/software/theano/)
+* [Caffe](https://caffe.berkeleyvision.org/)
 
 **Linguagem: Java**
-* ![DeepLearning4j](https://deeplearning4j.org/)
+* [DeepLearning4j](https://deeplearning4j.org/)
 
 ## Onde pode ser aplicada?
 
@@ -88,7 +88,7 @@ Deep learning depois de um tempo parece as mil maravilhas, mas nem sempre ele pr
 *Quando tenho problemas complexos (classificação de imagens e reconhecimento de fala).
 
 
-Por hoje é isso pessoal!! Tem mais informações na minha ![apresentação](https://docs.google.com/presentation/d/1tEgYUVPZtO-mDRAgwYv76Hwqg29u6UYL_8CcXozBdoE/edit?usp=sharing), espero que tenho ficado bem claro para vocês o que é deep learning, qual a diferença dele dos algoritmos simples de machine learning, onde aplicar e quando aplicar o deep learning.
+Por hoje é isso pessoal!! Tem mais informações na minha [apresentação](https://docs.google.com/presentation/d/1tEgYUVPZtO-mDRAgwYv76Hwqg29u6UYL_8CcXozBdoE/edit?usp=sharing), espero que tenho ficado bem claro para vocês o que é deep learning, qual a diferença dele dos algoritmos simples de machine learning, onde aplicar e quando aplicar o deep learning.
 Esse artigo foi bem mais introdutório para vocês conhecerem um pouco sobre deep learning, mas caso queiram eu posso fazer un artigo sobre os tipos de arquiteturas e como funciona o processamento de dados.
 
-Qualquer dúvida me chamem nas redes sociais ![Linkedin](https://www.linkedin.com/in/laura-damaceno/) e ![Instagram](https://instagram.com/laura_damaceno_almeida) 
+Qualquer dúvida me chamem nas redes sociais [Linkedin](https://www.linkedin.com/in/laura-damaceno/) e [Instagram](https://instagram.com/laura_damaceno_almeida) 

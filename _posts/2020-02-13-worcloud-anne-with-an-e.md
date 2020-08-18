@@ -16,14 +16,14 @@ Mas antes de partimos pra mão na massa, precisamos entender alguns conceitos b�
 ## O que é NLP (Natural Language Processing)?
 NLP ou Linguagem de processamento natural é um ramo da inteligência artificial que se dedica a entender a relação da linguagem humana (falada, escrita) e a linguagem de máquina.
 E eu resolvi fazer um wordcloud ou uma nuvem de palavras com os tweets dos usuários sobre a série "Anne with an E".
-P.S: Eu disponibilizei os códigos usados nesse artigo no meu repositório do ![Github](https://github.com/lauraDamacenoAlmeida/Twitter_Analysis).
+P.S: Eu disponibilizei os códigos usados nesse artigo no meu repositório do [Github](https://github.com/lauraDamacenoAlmeida/Twitter_Analysis).
 
 ## O que é um wordcloud?
 
 <img src="/img/anne-with-an-e/artigo-4.jpeg" width="85%">
 
 
-![Wordcloud](https://github.com/amueller/word_cloud) ou nuvem de palavras é muito utilizada na exploração dos textos, para entender melhor quais palavras são frequentes nas frases, e assim realizar os possíveis tratamentos nelas ou entender melhor por exemplo: o que seus usuários ou clientes estão comentando sobre um determinado produto ou empresa.
+[Wordcloud](https://github.com/amueller/word_cloud) ou nuvem de palavras é muito utilizada na exploração dos textos, para entender melhor quais palavras são frequentes nas frases, e assim realizar os possíveis tratamentos nelas ou entender melhor por exemplo: o que seus usuários ou clientes estão comentando sobre um determinado produto ou empresa.
 
 ## Vantagens de utilizar wordcloud nas análises
 
@@ -35,7 +35,7 @@ Podemos **analisar milhares de feedbacks** de texto e com ele **levantar os term
 E com tudo isso teremos os tópicos mais importantes referentes ao negócio e priorizar quais deles são mais importantes de priorizar, ou seja, tomamos **decisões mais assertivas**.
 
 ## Extração dos tweets:
-Para extrair tweets do Twitter você precisa ter uma conta no ![Twitter developer](https://developer.twitter.com/) instalar a biblioteca ![TwitterSearch](https://pypi.org/project/TwitterSearch/), com ela podemos conectar com a API do Twitter para realizar essa extração. (vou deixar no final desse artigo a recomendação de um artigo excelente para a geração da API Key e os tokens)
+Para extrair tweets do Twitter você precisa ter uma conta no [Twitter developer](https://developer.twitter.com/) instalar a biblioteca [TwitterSearch](https://pypi.org/project/TwitterSearch/), com ela podemos conectar com a API do Twitter para realizar essa extração. (vou deixar no final desse artigo a recomendação de um artigo excelente para a geração da API Key e os tokens)
 
 ``` 
 def generate_tweet(key,secret,token,token_secret, pesquisa_tweet, language):
@@ -134,11 +134,11 @@ E o seu resultado deve ser parecido com este:
 <img src="/img/anne-with-an-e/artigo-2.png" width="85%">
 
 
-Antes de finalizar, vale ressaltar que o wordcloud é uma excelente ferramenta de visualização que facilita a análise dos textos ou text analysis, permitindo a visualização da distribuição de frequência das palavras e assim podemos melhorar o nosso pré processamento ou o entendimento dos nossos usuários. E para acessarem o artigo que ensina a gerar os tokens, clique ![aqui.](https://minerandodados.com.br/twitter-com-python/)
+Antes de finalizar, vale ressaltar que o wordcloud é uma excelente ferramenta de visualização que facilita a análise dos textos ou text analysis, permitindo a visualização da distribuição de frequência das palavras e assim podemos melhorar o nosso pré processamento ou o entendimento dos nossos usuários. E para acessarem o artigo que ensina a gerar os tokens, clique [aqui.](https://minerandodados.com.br/twitter-com-python/)
 
 E por isso é tudo pessoal!!
 
 <img src="/img/anne-with-an-e/artigo-1.gif" width="80%">
 
 
-Aproveita e me segue nas redes sociais para companhar mais de perto os meus trabalhos ;), no ![Linkedin](https://www.linkedin.com/in/laura-damaceno/) e ![Instagram](https://instagram.com/laura_damaceno_almeida)
+Aproveita e me segue nas redes sociais para companhar mais de perto os meus trabalhos ;), no [Linkedin](https://www.linkedin.com/in/laura-damaceno/) e [Instagram](https://instagram.com/laura_damaceno_almeida)
