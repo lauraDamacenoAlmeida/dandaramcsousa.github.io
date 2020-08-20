@@ -14,6 +14,7 @@ background: '/img/cientista-dados/1.jpg'
 
 Atualmente com a grande produção de dados das pessoas, vindo das redes sociais e da internet e grande parte desses dados "sem valor" acabam indo para o lixo, entretanto com os casos de sucesso na utilização desses dados, por exemplo a eleição do Donald Trump e a Cambrige Analytica, que usaram os dados das pessoas nas redes sociais em conjunto de técnicas de ciência de dados e aprendizado de máquina para fazer campanhas mais direcionadas para públicos específicos, foi um dos fatores que levaram as empresas perceberem o valor e o poder que os dados podem ter.
 Então o mercado vem pedindo cada vez mais por profissionais de dados (engenheiros, analistas e cientistas).
+
 A área dos dados vêm sido muito requisitada por pessoas de diversas formações, pois não necessariamente você precisa estar formado em um curso de tecnologia para atuar na área, por conta do campo multidisciplinar que é a ciência de dados.
 
 <img src="/img/cientista-dados/artigo-2.png" width="85%">
@@ -44,6 +45,7 @@ As bibliotecas mais utilizadas no python são: [pandas](https://pandas.pydata.or
 
 Dependendo da área que você for trabalhar conhecer banco de dados é essencial, pois os dados que são usados em análises e como entrada para os modelos de machine learning, são coletados do banco de dados.
 Portanto saber como fazer consultas no banco de dados é bem essencial nessa área. Existe dois tipos de bancos de dados, relacional e o não relacional para entender melhor os tipos de banco de dados, segue um artigo bem explicativo sobre isso do [EAD Courses](https://medium.com/@EADCourses/o-que-%C3%A9-banco-de-dados-conceitos-e-tipos-de-banco-de-dados-5d5904da66e5).
+
 Mas basicamente o banco de dados relacional é composto por tabelas, e elas tem um relacionamento entre elas, por exemplo: uma tabela que armazena os cursos de uma faculdade, chamada Curso e outra que armazena os alunos, chamada Aluno. Um aluno está matriculado à um curso específico, portanto nós temos um relacionamento entre a tabela Aluno e a tabela Curso. Já no banco de dados não relacional, não temos esse relacionamento, e é muito utilizado quando nós não temos uma estrutura bem definida nos dados.
 
 4. **Matemática**

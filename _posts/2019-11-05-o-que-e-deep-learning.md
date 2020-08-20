@@ -12,6 +12,7 @@ background: ''
 
 Todos nós aprendemos constantemente, ninguém nasce sabendo de tudo, e tudo o que sabemos vem dos acontecimentos e oque nos é ensinado dia a dia. E isso vale para as máquinas também, elas aprendem constantemente, através de várias técnicas e uma dessas técnicas é chamada "Deep learning" ou "Aprendizado constante" e eu vou apresentar à vocês hoje.
 Quando falamos em Inteligência Artificial logo vem na nossa cabeça super máquinas que podem destruir o mundo ou até máquinas que nem a Rosie, do desenho “Os Jetsons”.
+
 Mas Inteligência artificial é bem mais complicada do que isso, ela é divida em vários ramos, como "visão computacional", "Processamento de linguagem natural", "aprendizado de máquina", "aprendizado constante", "robôs" e por aí vai. Em cada ramo existe sua complexidade e sua forma de processar.
 
 <img src="/img/deep-learning/artigo-2.jpeg" width="85%">

@@ -92,6 +92,7 @@ Soma dos quadrados dos resíduos, mostra a variação de Y que não é explicada
 ### R²
 O R² é uma medida estatística de quão próximos os dados estão da linha de regressão ajustada. Ele também é conhecido como o coeficiente de determinação ou o coeficiente de determinação múltipla para a regressão múltipla.
 O R² está sempre entre 0 e 1:
+
 * 0: indica que o modelo não explica nada da variabilidade dos dados de resposta ao redor de sua média.
 * 1: indica que o modelo explica toda a variabilidade dos dados de resposta ao redor de sua média.
 

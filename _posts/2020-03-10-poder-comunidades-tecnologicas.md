@@ -23,7 +23,9 @@ Esse texto que estou fazendo é especial para vocês mulheres, onde falarei sobr
 As comunidades femininas têm um papel muito importante no nosso processo de autoconhecimento e empoderamento. Eu sou uma das felizardas desse processo de transformação interna devido as comunidades.
 Vou contar para vocês a minha história sem graça kkk, mas que me fez ser quem eu sou. Eu nunca quis ser de TI, eu queria ser engenheira química com ênfase em Petróleo, a matéria de química orgânica amoleceu meu coração e ocupou meus pensamentos.
 Mas não foi o suficiente para minha mãe, pois eu cresci em um ambiente de comparações e meu irmão se formou em TI, então para satisfazer o prazer dela eu prestei algumas provas para estudar Ciências da computação.
+
 Eu fui muito perdida com as coisas e não me encaixava de jeito nenhum na minha classe, todo mundo lá já queria fazer TI e já manjavam de algumas coisas e eu sempre tive um aprendizado mais lento e fui muito mal no começo. Na minha sala só tinham 3 meninas contando comigo, então infelizmente piadinhas machistas, sexistas eram muito comuns lá, até alguns professores participavam.
+
 Em 2017 foi um ano bem difícil para mim, tive algumas crises de ansiedade e a famosa síndrome do impostor começou a me dominar. A síndrome do impostor é um fenômeno que ocorre principalmente em mulheres da área de tecnologia, em que a pessoa se sente inferior o tempo todo, com auto criticas e auto sabotagem, além dos pensamentos que ficam ocupando a mente "Eu sou uma fraude e vão me descobrir " e também nunca se dar o crédito de tudo que conquistou, dizendo que teve sorte ou atribuindo o sucesso à outra pessoa. Mas nesse mesmo ano uma colega muito querida me apresentou as comunidades femininas de tecnologia, onde eu fui bem acolhida e consegui trabalhar esses meus problemas.
 
 ### Mas o que é comunidade?
