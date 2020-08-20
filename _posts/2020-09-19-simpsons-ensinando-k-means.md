@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Simpsons ensinando K-means"
+title: "Aprendendo k-means com os simpsons"
 subtitle: "Vamos aprender e entender o algoritmo k-means com os personagens favoritos de todos os tempos?"
 date: 2020-09-19 19:00:00 -0300
 background: '/img/simpsons-k-means/1.jpg'
 ---
 
 
-Imagine-se na seguinte situação, o desenho dos simpsons tem milheres(ou seria centenas?) de personagens e você precisa vender donuts para esses personagens, parece simples né?! Mas e se eu te disser que cada um deles tem gostos diferentes, cada um deles gostam de coisas diferentes, e pode até ser que tenhama lguns que não gostam de Donuts. Aí fica complicado né?! A gente passaria muitos dias (ou meses!) tentando vendê-los, e isso não é muito produtivo. 
+Imagine-se na seguinte situação, o desenho dos simpsons tem milhares(ou seria centenas?) de personagens e você precisa vender donuts para esses personagens, parece simples né?! Mas e se eu te disser que cada um deles tem gostos diferentes, cada um deles gostam de coisas diferentes, e pode até ser que tenhama lguns que não gostam de donuts. Aí fica complicado né?! A gente passaria muitos dias (ou meses!) tentando vendê-los, e isso não é muito produtivo. 
 
 <img src="https://i.pinimg.com/originals/f4/80/75/f480751f597dcd9d812e169baa81f7eb.jpg" width="90%">
 
-Mas e se eu te disser que existe uma solução para esse problema, algo que possa facilitar as nossas vendas de Donuts! Podemos usar um algoritmo para segmentar, ou seja, criar grupos diferentes de personagens baseados em suas caracteristicas, então teríamos um grupo de personagens que não gostam de Dounuts, grupos de personagens são muito fãns de Dounuts, personagens crianças (que podem gostar de Dounuts de chocolate), etc.. (por fim, podemos ter vários clusters ou grupos possíveis). 
+Mas e se eu te disser que existe uma solução para esse problema, algo que possa facilitar as nossas vendas de donuts! Podemos usar um algoritmo para segmentar, ou seja, criar grupos diferentes de personagens baseados em suas caracteristicas, então teríamos um grupo de personagens que não gostam de donuts, grupos de personagens são muito fãns de Dounuts, personagens crianças (que podem gostar de Dounuts de chocolate), etc.. (por fim, podemos ter vários clusters ou grupos possíveis). 
 
 Então que tal entendermos como funciona um dos algoritmos que pode nos ajudar a resolver esse problema e muitos outros problemas?
 
@@ -44,9 +44,6 @@ Normalmente o aprendizado não supervisioando é utilizado nos seguintes problem
 
 * Achar duplicações nos dados 
 
-* Passo de pré processamento (para predição, mineiração de dados) 
-
-
 
 ## E quais os diferentes tipos de algoritmos de clusterização?
 
@@ -65,23 +62,14 @@ Cria uma hierarquia decompondo uma série de objetos usando algum critério.
 Exemplo: Aglomerativo, Divisivo 
 
 
-### Clusterização baseada na densidade: 
-
-Produz clusters de forma arbitrária. Eles são bons quando lidam com aglomeração espacial, ou quando há ruido no conjunto de dados. 
-
-Exemplo: DBSCAN 
-
 **Mas infelizmente (ou felizmente), hoje aprenderemos apenas o K-means!**
 
-K-means também conhecido como Isodata ou C- Means, é o algoritmo mais conhecido e utilizado para o agrupamento de dados e apoio a outros algoritmos que possuem alto custo computacional, é o algoritmo de agrupamento mais popular e utilizado devido à sua simplicidade, eficiência e facilidade de implementação.
-Cada grupo é representado por um centroide, definido pela média dos dados pertencentes ao grupo, e o objetivo é particionar os dados em K grupos disjuntos, onde cada dado é ajustado ao grupo cujo o centroide é o mais próximo.
+K-means também conhecido como Isodata ou C- Means, é o algoritmo mais conhecido e utilizado para o agrupamento de dados e apoio a outros algoritmos que possuem alto custo computacional, é o algoritmo de agrupamento mais popular e utilizado devido à sua simplicidade, eficiência e facilidade de implementação. E ele recebeu esse nome pois ele particiona os dados e K grupos diferentes (OAAAAL), já já eu explico o significado do "means".
 
 **Mas como podemos medir o quão semelhante dois personagens são?**
 
 Através da distância entre os personagens, onde os personagens mais similares estarão mais próximos, ou seja, quanto menor a distância mais similares são, quanto maior a distância entre um personagem e outro, maior são suas diferenças. Em outras palavras, a distância entre os dados (personagens) é usada para moldar os clusters ou grupos. Então podemos dizer que o K-Means tenta minimizar a distancia intra-clusters e maximizam a distancia inter-clusters. 
 Neste caso iremos usar a distância Euclidiana para ver a distância entre os dados, mas existem outros métodos para calcular a distância (como por exemplo: método de cossenos, correlação de pearson).
-
-
 
 ## Começando com K-Means: 
 
@@ -124,7 +112,7 @@ Uma das opções é compararmos os resultados gerados com os verdadeiros resulta
 
 ## O grande desafio de escolher um valor para o K: 
 
-Essencialmente escolher o numero de clusters em um dataset é um problema muito frenquente. O valor correto de K é ambiguo pois depende muito da forma e da escala de distribuição de pontos em um dataset. Existe algumas abordagens para lidar com isso, mas uma das tecnicas mais usadas é executar o clustering em diferentes valores de K  e olhando para a metrica de precisão dele. Essa métrica pode ser “a distancia media entre os pontos de dados e seu centroide do cluster”, que indique quão densos são nossos clusters ou até que ponto minimizamos o erro de clustering.
+Essencialmente escolher o número de clusters em um dataset é um problema muito frenquente. O valor correto de K é ambiguo pois depende muito da forma e da escala de distribuição de pontos em um dataset. Existe algumas abordagens para lidar com isso, mas uma das tecnicas mais usadas é executar o clustering em diferentes valores de K  e olhando para a metrica de precisão dele. Essa métrica pode ser “a distância média entre os pontos de dados e seu centróide do cluster”, que indique quão densos são nossos clusters ou até que ponto minimizamos o erro de clustering.
 
 Mas o problema é que com o aumento do número de clusters, a distância dos centróides para pontos de dados será sempre reduzir. Isso significa que aumentar K sempre diminuirá o "erro". 
  
