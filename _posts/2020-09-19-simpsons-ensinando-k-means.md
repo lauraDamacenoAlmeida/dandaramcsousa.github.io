@@ -5,7 +5,15 @@ subtitle: "Vamos aprender e entender o algoritmo k-means com os personagens favo
 date: 2020-09-19 19:00:00 -0300
 background: '/img/simpsons-k-means/1.jpg'
 ---
-Os simpsons são a família mais famosa e mais conhecida de todos os tempos, com personagens super caricatos, engraçados e cheio de alegria e que tal entendermos como funciona um dos algoritmos mais famosos de machine learning com eles?
+
+
+Imagine-se na seguinte situação, o desenho dos simpsons tem milheres(ou seria centenas?) de personagens e você precisa vender donuts para esses personagens, parece simples né?! Mas e se eu te disser que cada um deles tem gostos diferentes, cada um deles gostam de coisas diferentes, e pode até ser que tenhama lguns que não gostam de Donuts. Aí fica complicado né?! A gente passaria muitos dias (ou meses!) tentando vendê-los, e isso não é muito produtivo. 
+
+<img src="https://i.pinimg.com/originals/f4/80/75/f480751f597dcd9d812e169baa81f7eb.jpg" width="85%">
+
+Mas e se eu te disser que existe uma solução para esse problema, algo que possa facilitar as nossas vendas de Donuts! Podemos usar um algoritmo para segmentar, ou seja, criar grupos diferentes de personagens baseados em suas caracteristicas, então teríamos um grupo de personagens que não gostam de Dounuts, grupos de personagens são muito fãns de Dounuts, personagens crianças (que podem gostar de Dounuts de chocolate), etc.. (por fim, podemos ter vários clusters ou grupos possíveis). 
+
+Então que tal entendermos como funciona um dos algoritmos que pode nos ajudar a resolver esse problema e muitos outros problemas?
 
 <img src="https://cosmonerd.com.br//uploads/2017/07/os-simpsons-fox-cosmonerd-post.jpg" width="85%">
 
@@ -16,11 +24,13 @@ Esse aprendizado é dividido em 3 grandes áreas: Supervisionado, não supervisi
 No aprendizado não supervisionado a máquina precisa aprender por si mesma os padrões e tendências existentes nos dados, diferente do supervisionado não temos a variável alvo. Por exemplo, queremos explorar o dataset com alguns personagens dos simpsons e com isso rodamos um algoritmo não supervisionado para entendê-los melhor. E o algoritmo nos retornou a saída abaixo com os clusters que ele formou, o que vocês vêem de semelhant entre os personagens dentro do clusters?
 
 <img src="/img/simpsons-k-means/artigo-1.png" width="85%">
-Se você olhar bem, o modelo separou os personagens pela idade (UAAAAL!!), ou seja, personagens com idades baixas formaram um grupo de pessoas mais novos, e já personagens com idades altas formam um grupo de pessoas mais velhas.
 
-Os problemas que envolvem esse aprendizado é:
+Se você olhar bem, o modelo separou os personagens pela idade (UAAAAL!!), ou seja, personagens com idades baixas formaram um grupo de pessoas mais novos, e já personagens com idades altas formam um grupo de pessoas mais velhas, portanto clusters nada mais é que grupos Bem bacana né?! 
+
+Normalmente o aprendizado não supervisioando é utilizado nos seguintes problemas:
 
 * Agrupamento ou clusterização: quando queremos agrupar os dados, de acordo com suas características ou descobrir grupos nos nossos dados, por exemplo agrupar os personagens pela idade. (spoiler: Iremos focar neste grupo no artigo)
+
 * Associação: quando queremos descobrir regras que descrevem os nossos dados, por exemplo as pessoas que gostam do livro A, tendem a comprar o livro B.
 
 
@@ -38,17 +48,19 @@ Os problemas que envolvem esse aprendizado é:
 
 
 
-## Diferentes tipos de algoritmos de clusterização: 
+## E quais os diferentes tipos de algoritmos de clusterização?
+
+<img src="https://media.giphy.com/media/xT5LMP8sIeIbxbW1Da/giphy.gif" width="85%">
 
 ### Clusterização baseada em partição: 
 
-Relativamente eficiente e é usado quando temos dados de tamanho grande ou médio 
+Constroem várias partições e depois é avaliado através de algum critério, por exemplo: "Faz sentido os clusters formados?".
 
 Exemplo: K-Means, K-Median, Fuzzy c-means 
 
-### Clusterização hierarquica: 
+### Clusterização hierárquica: 
 
-Produz grupos de árvores. É bem intuitivo e geralmente é bom de se utilizar quando temos datasets pequenos. 
+Cria uma hierarquia decompondo uma série de objetos usando algum critério.
 
 Exemplo: Aglomerativo, Divisivo 
 
