@@ -2,7 +2,7 @@
 layout: post
 title: "Simpsons ensinando K-means"
 subtitle: "Vamos aprender e entender o algoritmo k-means com os personagens favoritos de todos os tempos?"
-date: 2020-11-05 19:00:00 -0300
+date: 2020-09-19 19:00:00 -0300
 background: '/img/simpsons-k-means/1.png'
 ---
 Os simpsons são a família mais famosa e mais conhecida de todos os tempos, com personagens super caricatos, engraçados e cheio de alegria e que tal entendermos como funciona um dos algoritmos mais famosos de machine learning com eles?
