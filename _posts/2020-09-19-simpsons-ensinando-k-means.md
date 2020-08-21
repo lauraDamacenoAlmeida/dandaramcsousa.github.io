@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Aprendendo k-means com os simpsons [Não está pronto ainda!]"
-subtitle: "Vamos aprender e entender o algoritmo k-means com os personagens favoritos de todos os tempos?"
+subtitle: "Vamos aprender como funciona um dos algoritmos mais famosos de machine learning com os personagens mais famosos de todos os tempos?"
 date: 2020-09-19 19:00:00 -0300
 background: '/img/simpsons-k-means/1.jpg'
 ---
