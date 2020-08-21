@@ -102,7 +102,7 @@ Vamos explorar como ele funciona por baixo dos panos?
 
 1. Primeiro, precisamos definir um ‘K’, ou seja, um número de clusters (ou agrupamentos) que o algoritmo precisa fazer. 
 
-2. Depois, é definido aleatoriamente, um centróide (ou seja, um ponto de referência) para cada cluster (isso o algoritmo realiza sozinho).
+2. Depois, é definido aleatoriamente, um centróide, ou seja, um ponto de referência para cada cluster (isso o algoritmo realiza sozinho).
 
 3. Agora é encontrar a centróide mais próximo de cada ponto de dados, todos os pontos que estiverem mais próximos da centroide são atribuidos ao grupo. Podemos dizer que isso não resulta em bons clusters, pq as centroides foram dadas aleatórios, a princípio. 
 
