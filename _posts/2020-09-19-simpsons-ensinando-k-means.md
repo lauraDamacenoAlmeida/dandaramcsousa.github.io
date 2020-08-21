@@ -71,9 +71,11 @@ Para fazer os grupos ele precisa encontrar personagens semelhantes, **mas como p
 
 Através de cálculos de distância entre os personagens, onde os personagens mais similares estarão mais próximos, ou seja, quanto menor a distância mais similares são, quanto maior a distância entre um personagem e outro, maior são suas diferenças. Em outras palavras, a distância entre os dados (personagens) é usada para moldar os clusters ou grupos. 
 
-Então podemos dizer que o K-Means tenta minimizar a distancia intra-clusters (ou seja, diminuir a distância entre os personagens dentro de um grupo) e maximizam a distância inter-clusters (ou seja, precisamos aumentar a distância entre grupos diferentes). 
+Então podemos dizer que o K-Means tenta minimizar a distância intra-clusters (diminuir a distância entre os personagens dentro de um grupo) e maximizam a distância inter-clusters (precisamos aumentar a distância entre grupos diferentes). 
 
 <img src="/img/simpsons-k-means/artigo-2.png" width="85%">
+
+Nessa imagem vocês podem ver que a distância entre os clusters é exibido pela seta preta, e a distância intra-clusters é representado pelas setas dentro de cada um dos clusters. 
 
 Há alguns cálculos muito populares para calcular a distância entre os dados, entre eles temos:
 
@@ -114,7 +116,7 @@ Bem simples né?!
 
 <img src="https://media.giphy.com/media/liW10vuLjuUA8/giphy.gif" width="85%">
 
-O k-means é uma heurística, e com isso não temos garantia que convergirá para um resultado ótimo, e o resultado pode depender dos clusters iniciais. Isso significa que este algoritmo é garantido para convergir a um resultado, mas o resultado pode ser um ótimo local (ou seja, não necessariamente o melhor possível resultado). Para resolver este problema, é comum executar todo o processo, várias vezes, com diferentes condições iniciais. 
+O k-means (assim como muitos outros algoritmos de machine learning) é uma **heurística**, e com isso não temos garantia que convergirá para um resultado ótimo, e o resultado pode depender dos clusters iniciais. Isso significa que este algoritmo é garantido para convergir a um resultado, mas o resultado pode ser um ótimo local (ou seja, não necessariamente o melhor possível resultado). Para resolver este problema, é comum executar todo o processo, várias vezes, com diferentes condições iniciais. 
 
 ## E como saber se ele acertou? Como avaliar oque foi gerado? 
 
@@ -124,7 +126,7 @@ Uma das opções é compararmos os resultados gerados com os verdadeiros resulta
 
 ## O grande desafio de escolher um valor para o K: 
 
-Essencialmente escolher o número de clusters em um dataset é um problema muito frenquente. O valor correto de K é ambiguo pois depende muito da forma e da escala de distribuição de pontos em um dataset. Existe algumas abordagens para lidar com isso, mas uma das tecnicas mais usadas é executar o clustering em diferentes valores de K  e olhando para a metrica de precisão dele. Essa métrica pode ser “a distância média entre os pontos de dados e seu centróide do cluster”, que indique quão densos são nossos clusters ou até que ponto minimizamos o erro de clustering.
+Essencialmente escolher o número de clusters em um dataset é um problema muito frenquente, pois o valor correto de K é ambiguo porque depende muito da forma e da escala de distribuição de pontos em um dataset. Existe algumas abordagens para lidar com isso, mas uma das técnicas mais usadas é executar o clustering em diferentes valores de K  e olhando para a métrica de precisão dele, essa métrica pode ser “a distância média entre os pontos de dados e seu centróide do cluster”, que indique quão densos são nossos clusters ou até que ponto minimizamos o erro de clustering.
 
 Mas o problema é que com o aumento do número de clusters, a distância dos centróides para pontos de dados será sempre reduzir. Isso significa que aumentar K sempre diminuirá o "erro". 
 Então, o valor da métrica como uma função de K é plotado e o "ponto de cotovelo" é determinado, onde a taxa de diminuição muda acentuadamente. É o K certo para clustering. Esse método é chamado de método do cotovelo e tem um artigo sensacional do pizza de dados sobre isso, para acessar clique [aqui](https://medium.com/pizzadedados/kmeans-e-metodo-do-cotovelo-94ded9fdf3a9). 
