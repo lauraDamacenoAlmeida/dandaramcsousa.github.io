@@ -100,30 +100,26 @@ Vamos explorar como ele funciona por baixo dos panos?
 
 1. Primeiro, precisamos definir um ‘K’, ou seja, um número de clusters (ou agrupamentos) que o algoritmo precisa fazer. 
 
-2. Depois, é definido aleatoriamente, um centroide/centro para cada cluster (isso o algoritmo realiza sozinho).
+2. Depois, é definido aleatoriamente, um centróide (ou seja, um ponto de referência) para cada cluster (isso o algoritmo realiza sozinho).
 
-3. Como principal objetivo do K-means é minimizar a distância dos pontos de dados em relação as centroides e maximizar a distancia de outros centroides de cluster. 
+3. Agora é encontrar a centróide mais próximo de cada ponto de dados, todos os pontos que estiverem mais próximos da centroide são atribuidos ao grupo. Podemos dizer que isso não resulta em bons clusters, pq as centroides foram dadas aleatórios, a princípio. 
 
-Então nesta etapa temos que encontrar a centróide/centro mais próximo de cada ponto de dados, todos os pontos que estiverem mais proximos da centroide são atribuidos ao grupo. Podemos dizer que isso não resulta em bons clusters, pq as centroides foram dadas aleatórios, a princípio. 
+4. Agora, a questão é: "Como podemos deixar os nossos clusters mais perfeitos?". Nós podemos mover os centróides. Na próxima etapa, cada centro de cluster  ser atualizado para ser a média dos pontos de dados em seu cluster, é daí que vem o "means" do K-means ("means" para quem não sabe significa "média" em português).
 
-4. Agora, a questão é: "Como podemos transformá-lo em melhores clusters, com menos erros?" 
-
-Ok, nós movemos os centróides. Na próxima etapa, cada centro de cluster  ser atualizado para ser a média dos pontos de dados em seu cluster, é daí que vem o "means" do K-means ("means" para quem não sabe significa "média" em português).
-
-5. Precisamo calcular a distância dos pontos tudo denovo. E as etapas 3 e 4 são repetidas até o momento em que os centróides não mudam, aí significa que obtermos a posição ideal dos centróides. 
+5. Precisamo calcular a distância dos pontos tudo denovo, portanto as etapas 3 e 4 são repetidas até o momento em que os centróides não mudam, aí significa que obtemos a posição ideal dos centróides. 
 
 Bem simples né?!
 
+## Mas atenção!!
 
-Contudo sendo uma heurística não temos garantia que convergirá para um resultado otimo, e o resultado pode depender dos clusters iniciais. Isso significa que este algoritmo é garantido para convergir a um resultado, mas o resultado pode ser um ótimo local (ou seja, não necessariamente o melhor possível resultado). Para resolver este problema, é comum executar todo o processo, várias vezes, com diferentes condições iniciais. 
+<img src="https://media.giphy.com/media/liW10vuLjuUA8/giphy.gif" width="85%">
 
-Isso significa que, com centróides de partida randomizados, isso pode dar um resultado melhor. 
-
-E como o algoritmo costuma ser muito rápido, não seria um problema executá-lo várias vezes. 
+O k-means é uma heurística, e com isso não temos garantia que convergirá para um resultado ótimo, e o resultado pode depender dos clusters iniciais. Isso significa que este algoritmo é garantido para convergir a um resultado, mas o resultado pode ser um ótimo local (ou seja, não necessariamente o melhor possível resultado). Para resolver este problema, é comum executar todo o processo, várias vezes, com diferentes condições iniciais. 
 
 ## E como saber se ele acertou? Como avaliar oque foi gerado? 
 
-Uma das opções é compararmos os resultados gerados com os verdadeiros resultados, se tiver disponivel. Normalmente não temos esses resultados verdadeiros, entõa tem uma outra opção, é com base no objetivo do k-means, que é a distancia dos pontos dentro de um cluster. Além disso a media entre as distancias pode ser usadas como uma métrica de erro para o algoritmo. 
+Uma das opções é compararmos os resultados gerados com os verdadeiros resultados, se tiver disponível. Normalmente não temos esses resultados verdadeiros, então tem uma outra opção, é com base no objetivo do k-means, ou seja, vamos considerar a distância dos pontos dentro de um cluster, por exemplo: pode ser usado a análise por Silhouette, que mede o quão bem um ponto se encaixa em um cluster (se você se interessou sobre essa técnica tem um artigo bem bacana que ensina como que aplica ela, clicando [aqui](https://dev.to/giselyalves13/aprendizado-nao-supervisionado-com-k-means-106f)), além disso a média entre as distâncias pode ser usada como uma métrica de erro para o algoritmo. 
+
 
 
 ## O grande desafio de escolher um valor para o K: 
