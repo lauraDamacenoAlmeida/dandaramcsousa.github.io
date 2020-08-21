@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Aprendendo k-means com os simpsons"
+title: "Aprendendo k-means com os simpsons [Não está pronto ainda!]"
 subtitle: "Vamos aprender e entender o algoritmo k-means com os personagens favoritos de todos os tempos?"
 date: 2020-09-19 19:00:00 -0300
 background: '/img/simpsons-k-means/1.jpg'
@@ -33,7 +33,7 @@ Normalmente o aprendizado não supervisioando é utilizado nos seguintes problem
 
 * Associação: quando queremos descobrir regras que descrevem os nossos dados, por exemplo as pessoas que gostam do livro A, tendem a comprar o livro B.
 
-Como o nosso objetivo é encontrar grupos dentro do desenho dos Simpsons, iremos utilizar algoritmos de clusterização
+Como o nosso objetivo é encontrar grupos dentro do desenho dos Simpsons, iremos utilizar algoritmos de clusterização.
 
 ## Mas quais as vantagens de usar cluterização? 
 
@@ -66,12 +66,30 @@ Exemplo: Aglomerativo, Divisivo
 **Mas infelizmente (ou felizmente), hoje aprenderemos apenas o K-means!**
 
 K-means também conhecido como Isodata ou C- Means, é o algoritmo mais conhecido e utilizado para o agrupamento de dados e apoio a outros algoritmos que possuem alto custo computacional, é o algoritmo de agrupamento mais popular e utilizado devido à sua simplicidade, eficiência e facilidade de implementação. E ele recebeu esse nome pois ele particiona os dados e K grupos diferentes (OAAAAL), já já eu explico o significado do "means".
+
 Para fazer os grupos ele precisa encontrar personagens semelhantes, **mas como podemos medir o quão semelhante dois personagens são? Como trazer isso para a matemática?**
 
-Através de cálculos de distância entre os personagens, onde os personagens mais similares estarão mais próximos, ou seja, quanto menor a distância mais similares são, quanto maior a distância entre um personagem e outro, maior são suas diferenças. Em outras palavras, a distância entre os dados (personagens) é usada para moldar os clusters ou grupos. Então podemos dizer que o K-Means tenta minimizar a distancia intra-clusters (ou seja, diminuir a distância entre os personagens dentro de um grupo) e maximizam a distância inter-clusters (ou seja, precisamos aumentar a distância entre grupos diferentes). 
+Através de cálculos de distância entre os personagens, onde os personagens mais similares estarão mais próximos, ou seja, quanto menor a distância mais similares são, quanto maior a distância entre um personagem e outro, maior são suas diferenças. Em outras palavras, a distância entre os dados (personagens) é usada para moldar os clusters ou grupos. 
 
+Então podemos dizer que o K-Means tenta minimizar a distancia intra-clusters (ou seja, diminuir a distância entre os personagens dentro de um grupo) e maximizam a distância inter-clusters (ou seja, precisamos aumentar a distância entre grupos diferentes). 
 
-Neste caso iremos usar a distância Euclidiana para ver a distância entre os dados, mas existem outros métodos para calcular a distância (como por exemplo: método de cossenos, correlação de pearson).
+<img src="/img/simpsons-k-means/artigo-2.png" width="85%">
+
+Há alguns cálculos muito populares para calcular a distância entre os dados, entre eles temos:
+
+1. Para dados binários:
+
+* Distância de Hamming
+
+2. Para dados categóricos:
+
+* Distância de Matching
+
+3. Para dados contínuos:
+
+* Distância euclidiana
+* Correlação de Pearson
+* Medida de cosseno (muito utilizado em textos)
 
 ## Começando com K-Means: 
 
@@ -117,9 +135,7 @@ Uma das opções é compararmos os resultados gerados com os verdadeiros resulta
 Essencialmente escolher o número de clusters em um dataset é um problema muito frenquente. O valor correto de K é ambiguo pois depende muito da forma e da escala de distribuição de pontos em um dataset. Existe algumas abordagens para lidar com isso, mas uma das tecnicas mais usadas é executar o clustering em diferentes valores de K  e olhando para a metrica de precisão dele. Essa métrica pode ser “a distância média entre os pontos de dados e seu centróide do cluster”, que indique quão densos são nossos clusters ou até que ponto minimizamos o erro de clustering.
 
 Mas o problema é que com o aumento do número de clusters, a distância dos centróides para pontos de dados será sempre reduzir. Isso significa que aumentar K sempre diminuirá o "erro". 
- 
-
-Então, o valor da métrica como uma função de K é plotado e o "ponto de cotovelo" é determinado, onde a taxa de diminuição muda acentuadamente. É o K certo para clustering. Esse método é chamado de método do cotovelo. 
+Então, o valor da métrica como uma função de K é plotado e o "ponto de cotovelo" é determinado, onde a taxa de diminuição muda acentuadamente. É o K certo para clustering. Esse método é chamado de método do cotovelo e tem um artigo sensacional do pizza de dados sobre isso, para acessar clique [aqui](https://medium.com/pizzadedados/kmeans-e-metodo-do-cotovelo-94ded9fdf3a9). 
 
 ## Recapitular: 
 
