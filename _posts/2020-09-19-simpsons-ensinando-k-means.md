@@ -116,7 +116,7 @@ Bem simples né?!
 
 <img src="https://media.giphy.com/media/liW10vuLjuUA8/giphy.gif" width="85%">
 
-O k-means (assim como muitos outros algoritmos de machine learning) é uma **heurística**, e com isso não temos garantia que convergirá para um resultado ótimo, e o resultado pode depender dos clusters iniciais. Isso significa que este algoritmo é garantido para convergir a um resultado, mas o resultado pode ser um ótimo local (ou seja, não necessariamente o melhor possível resultado). Para resolver este problema, é comum executar todo o processo, várias vezes, com diferentes condições iniciais. 
+O k-means (assim como muitos outros algoritmos de machine learning) é uma **heurística**, e com isso não temos garantia que convergirá para um **resultado ótimo**, e o resultado pode depender dos clusters iniciais. Isso significa que este algoritmo é garantido para convergir a um resultado, mas o resultado pode ser um ótimo local (ou seja, não necessariamente o melhor possível resultado). Para resolver este problema, é comum executar todo o processo, várias vezes, com diferentes condições iniciais. 
 
 ## E como saber se ele acertou? Como avaliar oque foi gerado? 
 
