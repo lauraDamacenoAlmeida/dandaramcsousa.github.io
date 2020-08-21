@@ -21,7 +21,7 @@ Antes de mais nada precisamos ter em mente o que é machine learning ou aprendiz
 
 Esse aprendizado é dividido em 3 grandes áreas: Supervisionado, não supervisionado, por reforço. Nesse post eu só vou explicar o **aprendizado não supervisionado**, pois é o foco do artigo ;). Mas caso você queira saber mais sobre os outros aprendizados, pode acessar o meu artigo pra [Sprint do Programaria](https://www.programaria.org/carreira-em-machine-learning-como-se-preparar-para-trabalhar-na-area/) e para o [AI Girls](https://dev.to/aigirlsbr/afinal-o-que-e-machine-learning-ih5).
 
-No aprendizado não supervisionado a máquina precisa aprender por si mesma os padrões e tendências existentes nos dados, diferente do supervisionado não temos a variável alvo. Por exemplo, queremos explorar o dataset com alguns personagens dos simpsons e com isso rodamos um algoritmo não supervisionado para entendê-los melhor. E o algoritmo nos retornou a saída abaixo com os clusters que ele formou, o que vocês vêem de semelhant entre os personagens dentro do clusters?
+No aprendizado não supervisionado a máquina precisa aprender por si mesma os padrões e tendências existentes nos dados, diferente do supervisionado não temos a variável alvo. Por exemplo, queremos explorar o dataset com alguns personagens dos simpsons e com isso rodamos um algoritmo não supervisionado para entendê-los melhor. E o algoritmo nos retornou a saída abaixo com os clusters que ele formou, o que vocês vêem de semelhante entre os personagens dentro do clusters?
 
 <img src="/img/simpsons-k-means/artigo-1.png" width="85%">
 
@@ -33,8 +33,9 @@ Normalmente o aprendizado não supervisioando é utilizado nos seguintes problem
 
 * Associação: quando queremos descobrir regras que descrevem os nossos dados, por exemplo as pessoas que gostam do livro A, tendem a comprar o livro B.
 
+Como o nosso objetivo é encontrar grupos dentro do desenho dos Simpsons, iremos utilizar algoritmos de clusterização
 
-## Mas Laura, porque usar cluterização? 
+## Mas quais as vantagens de usar cluterização? 
 
 * Analise exploratória nos dados 
 
@@ -65,10 +66,11 @@ Exemplo: Aglomerativo, Divisivo
 **Mas infelizmente (ou felizmente), hoje aprenderemos apenas o K-means!**
 
 K-means também conhecido como Isodata ou C- Means, é o algoritmo mais conhecido e utilizado para o agrupamento de dados e apoio a outros algoritmos que possuem alto custo computacional, é o algoritmo de agrupamento mais popular e utilizado devido à sua simplicidade, eficiência e facilidade de implementação. E ele recebeu esse nome pois ele particiona os dados e K grupos diferentes (OAAAAL), já já eu explico o significado do "means".
+Para fazer os grupos ele precisa encontrar personagens semelhantes, **mas como podemos medir o quão semelhante dois personagens são? Como trazer isso para a matemática?**
 
-**Mas como podemos medir o quão semelhante dois personagens são?**
+Através de cálculos de distância entre os personagens, onde os personagens mais similares estarão mais próximos, ou seja, quanto menor a distância mais similares são, quanto maior a distância entre um personagem e outro, maior são suas diferenças. Em outras palavras, a distância entre os dados (personagens) é usada para moldar os clusters ou grupos. Então podemos dizer que o K-Means tenta minimizar a distancia intra-clusters (ou seja, diminuir a distância entre os personagens dentro de um grupo) e maximizam a distância inter-clusters (ou seja, precisamos aumentar a distância entre grupos diferentes). 
 
-Através da distância entre os personagens, onde os personagens mais similares estarão mais próximos, ou seja, quanto menor a distância mais similares são, quanto maior a distância entre um personagem e outro, maior são suas diferenças. Em outras palavras, a distância entre os dados (personagens) é usada para moldar os clusters ou grupos. Então podemos dizer que o K-Means tenta minimizar a distancia intra-clusters e maximizam a distancia inter-clusters. 
+
 Neste caso iremos usar a distância Euclidiana para ver a distância entre os dados, mas existem outros métodos para calcular a distância (como por exemplo: método de cossenos, correlação de pearson).
 
 ## Começando com K-Means: 
