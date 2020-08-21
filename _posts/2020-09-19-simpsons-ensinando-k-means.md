@@ -77,49 +77,45 @@ Então podemos dizer que o K-Means tenta minimizar a distancia intra-clusters (o
 
 Há alguns cálculos muito populares para calcular a distância entre os dados, entre eles temos:
 
-1. Para dados binários:
+**Para dados binários:**
 
 * Distância de Hamming
 
-2. Para dados categóricos:
+**Para dados categóricos:**
 
 * Distância de Matching
 
-3. Para dados contínuos:
+**Para dados contínuos:**
 
 * Distância euclidiana
 * Correlação de Pearson
 * Medida de cosseno (muito utilizado em textos)
 
-## Começando com K-Means: 
+## Como o K-Means funciona?
 
-1. determino o  numero de clusters (K). O conceito chave é que o K-means escolhe aleatoriamente o ponto(centróides) de cada cluster. Determinar o numero de K, é bem mais complicado. 
+Vamos explorar como ele funciona por baixo dos panos?
 
-Existem 2 abordagens para escolhermos a centróide: 
+<img src="https://media.giphy.com/media/RwLDkna2fN3fG/giphy.gif" width="85%">
 
-Podemos escolher randomicamente N posições da centroide, fora do conjunto de dados. 
 
-Podemos  escolher randomicamente N posições da controide. 
+1. Primeiro, precisamos definir um ‘K’, ou seja, um número de clusters (ou agrupamentos) que o algoritmo precisa fazer. 
 
-2. Após a etapa de inicialização, que estava definindo o centroide de cada cluster, temos que atribuir cada cliente para o centro mais proximo. Para isso precisamos calcular a distancia de cada ponto de dados das centroides. 
+2. Depois, é definido aleatoriamente, um centroide/centro para cada cluster (isso o algoritmo realiza sozinho).
 
-3. O principal objetivo do K-means é minimizar a distância dos pontos de dados em relação as centroides e maximizar a distancia de outros centroides de cluster. 
+3. Como principal objetivo do K-means é minimizar a distância dos pontos de dados em relação as centroides e maximizar a distancia de outros centroides de cluster. 
 
-Então nesta etapa temos que encontrar a centroide mais proxima de cada ponto de dados. Todos os pontos que tiverem mais proximos da centroide são atribuidos ao grupo. 
+Então nesta etapa temos que encontrar a centróide/centro mais próximo de cada ponto de dados, todos os pontos que estiverem mais proximos da centroide são atribuidos ao grupo. Podemos dizer que isso não resulta em bons clusters, pq as centroides foram dadas aleatórios, a princípio. 
 
-Em outras palavras, os pontos de dados que tiverem menores distancia da centroide pertencerao ao grupo. Podemos dizer que isso não resulta em bons clusters, pq as centroides foram dadas aleatoriamentes. 
+4. Agora, a questão é: "Como podemos transformá-lo em melhores clusters, com menos erros?" 
 
-4. Agora, a questão é: "Como podemos transformá-lo em melhores clusters, com menos erros? " 
+Ok, nós movemos os centróides. Na próxima etapa, cada centro de cluster  ser atualizado para ser a média dos pontos de dados em seu cluster, é daí que vem o "means" do K-means ("means" para quem não sabe significa "média" em português).
 
-Ok, nos movemos centróides. Na próxima etapa, cada centro de cluster 
+5. Precisamo calcular a distância dos pontos tudo denovo. E as etapas 3 e 4 são repetidas até o momento em que os centróides não mudam, aí significa que obtermos a posição ideal dos centróides. 
 
-ser atualizado para ser a média dos pontos de dados em seu cluster. De fato, cada centímetro se move de acordo com seus membros de cluster. Em outras palavras, o centróide de cada um dos 3 clusters se torna a nova média. 
+Bem simples né?!
 
-5. Precisamo calcular a distancia dos pontos tudo denovo. E assim por diante. 
 
-Contudo sendo uma heuristica não temos garantia que convergirá para um resultado otimo, e o resultado pode depender dos clusters iniciais 
-
-Isso significa que este algoritmo é garantido para convergir a um resultado, mas o resultado pode ser um ótimo local (ou seja, não necessariamente o melhor possível resultado). Para resolver este problema, é comum executar todo o processo, várias vezes, com diferentes condições iniciais. 
+Contudo sendo uma heurística não temos garantia que convergirá para um resultado otimo, e o resultado pode depender dos clusters iniciais. Isso significa que este algoritmo é garantido para convergir a um resultado, mas o resultado pode ser um ótimo local (ou seja, não necessariamente o melhor possível resultado). Para resolver este problema, é comum executar todo o processo, várias vezes, com diferentes condições iniciais. 
 
 Isso significa que, com centróides de partida randomizados, isso pode dar um resultado melhor. 
 
