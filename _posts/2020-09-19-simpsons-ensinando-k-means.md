@@ -9,7 +9,7 @@ background: '/img/simpsons-k-means/1.jpg'
 
 Imagine-se na seguinte situação, o desenho dos simpsons tem milhares(ou seria centenas?) de personagens e você precisa vender donuts para esses personagens, parece simples né?! Mas e se eu te disser que cada um deles tem gostos diferentes, cada um deles gostam de coisas diferentes, e pode até ser que tenhama lguns que não gostam de donuts. Aí fica complicado né?! A gente passaria muitos dias (ou meses!) tentando vendê-los, e isso não é muito produtivo. 
 
-<img src="https://i.pinimg.com/originals/f4/80/75/f480751f597dcd9d812e169baa81f7eb.jpg" width="90%">
+<img src="https://miro.medium.com/max/1400/1*4wW4eTei-_4jjFJ99pGgIw.png" width="90%">
 
 Mas e se eu te disser que existe uma solução para esse problema, algo que possa facilitar as nossas vendas de donuts! Podemos usar um algoritmo para segmentar, ou seja, criar grupos diferentes de personagens baseados em suas características, então teríamos um grupo de personagens que não gostam de donuts, grupos de personagens são muito fãns de Dounuts, personagens crianças (que podem gostar de Dounuts de chocolate), etc.. (por fim, podemos ter vários clusters ou grupos possíveis). 
 
@@ -119,10 +119,10 @@ Bem simples né?!
 
 O k-means (assim como muitos outros algoritmos de machine learning) é uma **heurística**, e com isso não temos garantia que convergirá para um **resultado ótimo**, e o resultado pode depender dos clusters iniciais. Isso significa que este algoritmo é garantido para convergir a um resultado, mas o resultado pode ser um ótimo local (ou seja, não necessariamente o melhor possível resultado). Para resolver este problema, é comum executar todo o processo, várias vezes, com diferentes condições iniciais. 
 
+
 ## E como saber se ele acertou? Como avaliar oque foi gerado? 
 
 Uma das opções é compararmos os resultados gerados com os verdadeiros resultados, se tiver disponível. Normalmente não temos esses resultados verdadeiros, então tem uma outra opção, é com base no objetivo do k-means, ou seja, vamos considerar a distância dos pontos dentro de um cluster, por exemplo: pode ser usado a análise por Silhouette, que mede o quão bem um ponto se encaixa em um cluster (se você se interessou sobre essa técnica tem um artigo bem bacana que ensina como que aplica ela, clicando [aqui](https://dev.to/giselyalves13/aprendizado-nao-supervisionado-com-k-means-106f)), além disso a média entre as distâncias pode ser usada como uma métrica de erro para o algoritmo. 
-
 
 
 ## O grande desafio de escolher um valor para o K: 
