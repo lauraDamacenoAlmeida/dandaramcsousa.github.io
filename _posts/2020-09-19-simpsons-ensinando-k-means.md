@@ -99,7 +99,6 @@ Há alguns cálculos muito populares para calcular a distância entre os dados, 
 * Correlação de Pearson
 * Medida de cosseno (muito utilizado em textos)
 
-No nosso caso iremos usar a distância euclidiana 
 ## Como o K-Means funciona?
 
 Vamos explorar como ele funciona por baixo dos panos?
@@ -111,13 +110,14 @@ Vamos explorar como ele funciona por baixo dos panos?
 
 2. Depois, é definido aleatoriamente, um centróide, ou seja, um ponto de referência para cada cluster (isso o algoritmo realiza sozinho).
 
-3. Agora é encontrar a centróide mais próximo de cada ponto de dados, todos os pontos que estiverem mais próximos da centroide são atribuidos ao grupo. Podemos dizer que isso não resulta em bons clusters, pq as centroides foram dadas aleatórios, a princípio. 
+3. Agora é encontrar a centróide mais próximo de cada ponto de dados, todos os pontos que estiverem mais próximos da centróide são atribuidos ao grupo. Podemos dizer que isso não resulta em bons clusters, pois os centróides foram dadas aleatórios, a princípio. 
 
 4. Agora, a questão é: "Como podemos deixar os nossos clusters mais perfeitos?". Nós podemos mover os centróides. Na próxima etapa, cada centro de cluster  ser atualizado para ser a média dos pontos de dados em seu cluster, é daí que vem o "means" do K-means ("means" para quem não sabe significa "média" em português).
 
 5. Precisamo calcular a distância dos pontos tudo denovo, portanto as etapas 3 e 4 são repetidas até o momento em que os centróides não mudam, aí significa que obtemos a posição ideal dos centróides. 
 
 Bem simples né?!
+
 
 ## Mas atenção!!
 
@@ -141,19 +141,8 @@ Essencialmente escolher o número de clusters em um dataset é um problema muito
 Outra forma é usarmos o "Método do cotovelo", que nos ajuda a definir a melhor quantidade de clusters que podem ser encontrados, mesmo sem saber a reposta antecipadamente, tem um artigo sensacional do pizza de dados sobre isso, para acessar clique [aqui](https://medium.com/pizzadedados/kmeans-e-metodo-do-cotovelo-94ded9fdf3a9). 
 
 
-## Recapitular: 
-
-k-Means é um cluster baseado em particionamento, que é: 
-
-a) Relativamente eficiente em conjuntos de dados de médio e grande porte; 
-
-b) Produz aglomerados semelhantes a esferas, porque os aglomerados são formados em torno dos centróides; 
-
-c) Sua desvantagem é que devemos pré-especificar o número de clusters, e isso não é uma tarefa fácil. 
-
-
 Bora pra prática?!!
-Pessoal como uma boa pythonlover eu mostrarei o algoritmo através da biblioteca do python, chamada Sckt-learn.
+Pessoal como uma boa pythonlover eu mostrarei o algoritmo através da biblioteca do python, chamada Scikit-learn.
 
 
 
