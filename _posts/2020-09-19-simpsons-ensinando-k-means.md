@@ -56,11 +56,17 @@ Constroem várias partições e depois é avaliado através de algum critério, 
 
 Exemplo: K-Means, K-Median, Fuzzy c-means 
 
+<img src="/img/simpsons-k-means/artigo-4.png" width="85%">
+
+
 ### Clusterização hierárquica: 
 
 Cria uma hierarquia decompondo uma série de objetos usando algum critério.
 
 Exemplo: Aglomerativo, Divisivo 
+
+<img src="/img/simpsons-k-means/artigo-3.png" width="85%">
+
 
 
 **Mas infelizmente (ou felizmente), hoje aprenderemos apenas o K-means!**
