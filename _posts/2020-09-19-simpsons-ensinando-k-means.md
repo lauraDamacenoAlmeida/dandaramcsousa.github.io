@@ -11,7 +11,7 @@ Imagine-se na seguinte situação, o desenho dos simpsons tem milhares(ou seria 
 
 <img src="https://i.pinimg.com/originals/f4/80/75/f480751f597dcd9d812e169baa81f7eb.jpg" width="90%">
 
-Mas e se eu te disser que existe uma solução para esse problema, algo que possa facilitar as nossas vendas de donuts! Podemos usar um algoritmo para segmentar, ou seja, criar grupos diferentes de personagens baseados em suas caracteristicas, então teríamos um grupo de personagens que não gostam de donuts, grupos de personagens são muito fãns de Dounuts, personagens crianças (que podem gostar de Dounuts de chocolate), etc.. (por fim, podemos ter vários clusters ou grupos possíveis). 
+Mas e se eu te disser que existe uma solução para esse problema, algo que possa facilitar as nossas vendas de donuts! Podemos usar um algoritmo para segmentar, ou seja, criar grupos diferentes de personagens baseados em suas características, então teríamos um grupo de personagens que não gostam de donuts, grupos de personagens são muito fãns de Dounuts, personagens crianças (que podem gostar de Dounuts de chocolate), etc.. (por fim, podemos ter vários clusters ou grupos possíveis). 
 
 Então que tal entendermos como funciona um dos algoritmos que pode nos ajudar a resolver esse problema e muitos outros problemas?
 
@@ -29,7 +29,7 @@ Se você olhar bem, o modelo separou os personagens pela idade (UAAAAL!!), ou se
 
 Normalmente o aprendizado não supervisioando é utilizado nos seguintes problemas:
 
-* Agrupamento ou clusterização: quando queremos agrupar os dados, de acordo com suas características ou descobrir grupos nos nossos dados, por exemplo agrupar os personagens pela idade. (spoiler: Iremos focar neste grupo no artigo)
+* Agrupamento ou clusterização: quando queremos agrupar os dados, de acordo com suas características ou descobrir grupos nos nossos dados, por exemplo agrupar os personagens pela idade (spoiler: Iremos focar neste grupo no artigo). Então cluster nada mais é que um grupo de objetos (personagens, pontos, clientes, etc..) similares.
 
 * Associação: quando queremos descobrir regras que descrevem os nossos dados, por exemplo as pessoas que gostam do livro A, tendem a comprar o livro B.
 
@@ -93,6 +93,7 @@ Há alguns cálculos muito populares para calcular a distância entre os dados, 
 * Correlação de Pearson
 * Medida de cosseno (muito utilizado em textos)
 
+No nosso caso iremos usar a distância euclidiana 
 ## Como o K-Means funciona?
 
 Vamos explorar como ele funciona por baixo dos panos?
@@ -126,10 +127,13 @@ Uma das opções é compararmos os resultados gerados com os verdadeiros resulta
 
 ## O grande desafio de escolher um valor para o K: 
 
+<img src="https://media.giphy.com/media/3orif2teAM5HwdVMB2/giphy.gif" width="85%">
+
+
 Essencialmente escolher o número de clusters em um dataset é um problema muito frenquente, pois o valor correto de K é ambiguo porque depende muito da forma e da escala de distribuição de pontos em um dataset. Existe algumas abordagens para lidar com isso, mas uma das técnicas mais usadas é executar o clustering em diferentes valores de K  e olhando para a métrica de precisão dele, essa métrica pode ser “a distância média entre os pontos de dados e seu centróide do cluster”, que indique quão densos são nossos clusters ou até que ponto minimizamos o erro de clustering.
 
-Mas o problema é que com o aumento do número de clusters, a distância dos centróides para pontos de dados será sempre reduzir. Isso significa que aumentar K sempre diminuirá o "erro". 
-Então, o valor da métrica como uma função de K é plotado e o "ponto de cotovelo" é determinado, onde a taxa de diminuição muda acentuadamente. É o K certo para clustering. Esse método é chamado de método do cotovelo e tem um artigo sensacional do pizza de dados sobre isso, para acessar clique [aqui](https://medium.com/pizzadedados/kmeans-e-metodo-do-cotovelo-94ded9fdf3a9). 
+Outra forma é usarmos o "Método do cotovelo", que nos ajuda a definir a melhor quantidade de clusters que podem ser encontrados, mesmo sem saber a reposta antecipadamente, tem um artigo sensacional do pizza de dados sobre isso, para acessar clique [aqui](https://medium.com/pizzadedados/kmeans-e-metodo-do-cotovelo-94ded9fdf3a9). 
+
 
 ## Recapitular: 
 
