@@ -138,7 +138,7 @@ Uma das opções é compararmos os resultados gerados com os verdadeiros resulta
 
 Essencialmente escolher o número de clusters em um dataset é um problema muito frenquente, pois o valor correto de K é ambiguo porque depende muito da forma e da escala de distribuição de pontos em um dataset. Existe algumas abordagens para lidar com isso, mas uma das técnicas mais usadas é executar o clustering em diferentes valores de K  e olhando para a métrica de precisão dele, essa métrica pode ser “a distância média entre os pontos de dados e seu centróide do cluster”, que indique quão densos são nossos clusters ou até que ponto minimizamos o erro de clustering.
 
-Outra forma é usarmos o "Método do cotovelo", que nos ajuda a definir a melhor quantidade de clusters que podem ser encontrados, mesmo sem saber a reposta antecipadamente, tem um artigo sensacional do pizza de dados sobre isso, para acessar clique [aqui](https://medium.com/pizzadedados/kmeans-e-metodo-do-cotovelo-94ded9fdf3a9). 
+Outra forma é usarmos o "Método do cotovelo", que utiliza a distância média entre os pontos e centróide dentro do cluster e nos ajuda a definir a melhor quantidade de clusters que podem ser encontrados, mesmo sem saber a reposta antecipadamente, tem um artigo sensacional do pizza de dados sobre isso, para acessar clique [aqui](https://medium.com/pizzadedados/kmeans-e-metodo-do-cotovelo-94ded9fdf3a9). 
 
 
 
@@ -183,7 +183,7 @@ E esses foram os clusters gerados pelo algoritmo:
 
 Podemos notar que temos um cluster com os personagens mais novos, e tem um grupo de personagens mais velhos, entratanto podemos ver que o Homer ficou sozinho lá na ponta, pode ser pois ele é o único personagem que tem pouco cabelo. Mas será que a quantidade de clusters, estão corretos? Vamos utilizar o método do cotovelo para validar =).
 
-Conforme disse a maravilhosa Jessica Temporal no seu artigo sobre "Como definir o número de clusters para o seu K-means" (você pode acessar clicando [aqui.](https://medium.com/pizzadedados/kmeans-e-metodo-do-cotovelo-94ded9fdf3a9)) "o KMeans calcula a distância das observações até o centro do agrupamento que ela pertence, o ideal é que essa distância seja a menor viável. [..] nós estamos buscando uma quantidade de agrupamentos em que a soma dos quadrados intra-clusters", e isso o scikit-learn já calcula pra gente e ele dá o nome de "inertia". 
+Conforme disse a maravilhosa Jessica Temporal no seu artigo sobre "Como definir o número de clusters para o seu K-means" (você pode acessar clicando [aqui.](https://medium.com/pizzadedados/kmeans-e-metodo-do-cotovelo-94ded9fdf3a9)) "o KMeans calcula a distância das observações até o centro do agrupamento que ela pertence, o ideal é que essa distância seja a menor viável. [..] nós estamos buscando uma quantidade de agrupamentos em que a soma dos quadrados intra-clusters seja a menor possível.", e isso o scikit-learn já calcula pra gente e ele dá o nome de "inertia". 
 
 ```
 df_final = df.drop('Personagem',axis=1)
