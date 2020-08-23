@@ -29,9 +29,9 @@ Se você olhar bem, o modelo separou os personagens pela idade (UAAAAL!!), ou se
 
 Normalmente o aprendizado não supervisioando é utilizado nos seguintes problemas:
 
-* Agrupamento ou clusterização: quando queremos agrupar os dados, de acordo com suas características ou descobrir grupos nos nossos dados, por exemplo agrupar os personagens pela idade (spoiler: Iremos focar neste grupo no artigo). Então cluster nada mais é que um grupo de objetos (personagens, pontos, clientes, etc..) similares.
+* **Agrupamento ou clusterização:** quando queremos agrupar os dados, de acordo com suas características ou descobrir grupos nos nossos dados, por exemplo agrupar os personagens pela idade (spoiler: Iremos focar neste grupo no artigo). Então cluster nada mais é que um grupo de objetos (personagens, pontos, clientes, etc..) similares.
 
-* Associação: quando queremos descobrir regras que descrevem os nossos dados, por exemplo as pessoas que gostam do livro A, tendem a comprar o livro B.
+* **Associação:** quando queremos descobrir regras que descrevem os nossos dados, por exemplo as pessoas que gostam do livro A, tendem a comprar o livro B.
 
 Como o nosso objetivo é encontrar grupos dentro do desenho dos Simpsons, iremos utilizar algoritmos de clusterização.
 
