@@ -179,11 +179,47 @@ E esses foram os clusters gerados pelo algoritmo:
 
 Podemos notar que temos um cluster com os personagens mais novos, e tem um grupo de personagens mais velhos, entratanto podemos ver que o Homer ficou sozinho lá na ponta, pode ser pois ele é o único personagem que tem pouco cabelo. Mas será que a quantidade de clusters, estão corretos? Vamos utilizar o método do cotovelo para validar =).
 
+Conforme disse a maravilhosa Jessica Temporal no seu artigo sobre "Como definir o número de clusters para o seu K-means" (você pode acessar clicando [aqui.](https://medium.com/pizzadedados/kmeans-e-metodo-do-cotovelo-94ded9fdf3a9)) "o KMeans calcula a distância das observações até o centro do agrupamento que ela pertence, o ideal é que essa distância seja a menor viável. [..] nós estamos buscando uma quantidade de agrupamentos em que a soma dos quadrados intra-clusters", e isso o scikit-learn já calcula pra gente e ele dá o nome de "inertia". 
 
+```
+df_final = df.drop('Personagem',axis=1)
+Sum_of_squared_distances = []
+K = range(2,8)
+for k in K:
+    km = KMeans(n_clusters=k)
+    km = km.fit(df_final)
+    Sum_of_squared_distances.append(km.inertia_)
 
+```
+Para isso eu criei um vetor chamado "Sum_of_squared_distances" que vai armazenar o valor da "inertia" em cada um dos experimentos. Como nós temos 9 personagens, vamos testar o desempenho do K-means com quantidade de clusters de 2 a 7, e com isso treinamos o modelo com os mesmos dados anteriores e adicionamos no vetor. Agora que temos o vetor, que tá plotarmos para facilitar a nossa análise?!
 
+```
+plt.plot(K, Sum_of_squared_distances, 'bx-')
+plt.xlabel('k')
+plt.ylabel('Sum_of_squared_distances')
+plt.title('Elbow Method For Optimal k')
+plt.show()
+```
+Eu fiz um plot beem simples, utilizando a biblioteca [Matplotlib](https://matplotlib.org/) do python, onde passamos por parâmetro no método .plot() o valor do eixo X e Y, e a forma como queremos que apareça os dados.
+Ao usar a função .xlabel() e .ylabel() estamos colocando nome nos eixos do gráfico gerado.
 
+<img src="/img/simpsons-k-means/artigo-9.png" width="70%">
 
+E nele conseguimos ver mais ou menos que o melhor valor pros clusters é 4, então que tal treinarmos o modelo denovo e plotarmos para ver o resultado?
 
+```
+kmeans_2=KMeans(n_clusters=4)
+kmeans_2.fit(df_final)
+df['cluster_'] = kmeans_2.labels_
 
+#plotando os clusters gerados
+plt.xlabel('Peso')
+plt.ylabel('Idade')
+plt.scatter(df['Peso'], df['Idade'], c=df['cluster_'])
+```
 
+E no final temos a seguinte saída:
+
+<img src="/img/simpsons-k-means/artigo-10.png" width="70%">
+
+Agora está mais visível os diferentes grupos nos nossos dados, e podemos observar que temos 2 outliers (representados pelo: Abbe e pelo Homer).
