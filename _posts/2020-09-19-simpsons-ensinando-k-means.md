@@ -173,9 +173,9 @@ kmeans.fit(df.drop('Personagem',axis=1))
 ```
 No código acima importamos o algoritmo, e instânciamos e atribuimos a uma variável chamada "kmeans". Ah! E definimos a quantidade de cluster como 3, e treinamos o modelo com o método .fit(), precisamos passar os dados dentro dos parênteses, no meu caso eu deletei a coluna com o nome dos personagens ao passar por parâmetro.
 
-E esses foram os clusters gerados pelo algorítmo:
+E esses foram os clusters gerados pelo algoritmo:
 
-<img src="/img/simpsons-k-means/artigo-6.png" width="60%">
+<img src="/img/simpsons-k-means/artigo-6.png" width="70%">
 
 Podemos notar que temos um cluster com os personagens mais novos, e tem um grupo de personagens mais velhos, entratanto podemos ver que o Homer ficou sozinho lá na ponta, pode ser pois ele é o único personagem que tem pouco cabelo. Mas será que a quantidade de clusters, estão corretos? Vamos utilizar o método do cotovelo para validar =).
 
