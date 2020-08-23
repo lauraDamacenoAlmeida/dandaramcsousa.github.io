@@ -230,7 +230,7 @@ Agora está mais visível os diferentes grupos nos nossos dados, e podemos obser
 
 #### Ufaa!! Muita coisa né?!
 
-Mas eu espero que vocês tenham gostado, tentei trazer os aspectos básicos do k-means e os pontos de atenção que precisamos ter com o modelo. Você pode acessar o código do modelo e das análises, clicando [aqui](https://github.com/lauraDamacenoAlmeida/Simpsons_K-means)
+Mas eu espero que vocês tenham gostado, tentei trazer os aspectos básicos do k-means e os pontos de atenção que precisamos ter com o modelo. Você pode acessar os códigos utilizados, clicando [aqui](https://github.com/lauraDamacenoAlmeida/Simpsons_K-means).
 Qualquer dúvida ou feedback podem me chamar no [Linkedin](https://www.linkedin.com/in/laura-damaceno/) ou no [Instagram](https://instagram.com/laura_damaceno_almeida).
 
 
