@@ -71,7 +71,7 @@ Exemplo: Aglomerativo, Divisivo
 
 **Mas infelizmente (ou felizmente), hoje aprenderemos apenas o K-means!**
 
-K-means também conhecido como Isodata ou C- Means, é o algoritmo mais conhecido e utilizado para o agrupamento de dados e apoio a outros algoritmos que possuem alto custo computacional, é o algoritmo de agrupamento mais popular e utilizado devido à sua simplicidade, eficiência e facilidade de implementação. E ele recebeu esse nome pois ele particiona os dados e K grupos diferentes (OAAAAL), já já eu explico o significado do "means".
+K-means também conhecido como Isodata ou C- Means, é o algoritmo mais conhecido e utilizado para o agrupamento de dados e apoio a outros algoritmos que possuem alto custo computacional, é o algoritmo de agrupamento mais popular e utilizado devido à sua simplicidade, eficiência e facilidade de implementação. E ele recebeu esse nome pois ele particiona os dados e K grupos diferentes (OAAAAL),então se você passar pra ele o valor de K=3, o algoritmo irá formar 3 grupos (já já eu explico o significado do "means").
 
 Para fazer os grupos ele precisa encontrar personagens semelhantes, **mas como podemos medir o quão semelhante dois personagens são? Como trazer isso para a matemática?**
 
@@ -142,7 +142,13 @@ Outra forma é usarmos o "Método do cotovelo", que nos ajuda a definir a melhor
 
 
 Bora pra prática?!!
-Pessoal como uma boa pythonlover eu mostrarei o algoritmo através da biblioteca do python, chamada Scikit-learn.
+Pessoal, como uma boa pythonlover eu mostrarei a implementação do algoritmo através da biblioteca do python chamada [Scikit-learn](https://scikit-learn.org/stable/) e irei utilizar também um CSV que eu criei com algumas informações fictícias de alguns personagens do simpsons, para acessa-lo clique [aqui](). E logo abaixo temos a tabela com os personagens e as informações que vamos utilizar.
+
+<img src="/img/simpsons-k-means/artigo-5.png" width="85%">
+
+
+
+
 
 
 
