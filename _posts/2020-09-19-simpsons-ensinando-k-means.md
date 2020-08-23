@@ -145,7 +145,7 @@ Outra forma é usarmos o "Método do cotovelo", que nos ajuda a definir a melhor
 Bora pra prática?!!
 Pessoal, como uma boa pythonlover eu mostrarei a implementação do algoritmo através da biblioteca do python chamada [Scikit-learn](https://scikit-learn.org/stable/) e irei utilizar também um CSV que eu criei com algumas informações fictícias de alguns personagens do simpsons, para acessa-lo clique [aqui](). E logo abaixo temos a tabela com os personagens e as informações que vamos utilizar.
 
-<img src="/img/simpsons-k-means/artigo-5.png" width="50%">
+<div align="center"><img src="/img/simpsons-k-means/artigo-5.png" width="50%" aling='center'></div>
 
 Antes de mais nada, é necessário ler os dados, portanto utilizaremos a biblioteca Pandas para isso.
 ```
@@ -175,7 +175,7 @@ No código acima importamos o algoritmo, e instânciamos e atribuimos a uma vari
 
 E esses foram os clusters gerados pelo algorítmo:
 
-<img src="/img/simpsons-k-means/artigo-6.png" width="50%">
+<img src="/img/simpsons-k-means/artigo-6.png" width="60%">
 
 Podemos notar que temos um cluster com os personagens mais novos, e tem um grupo de personagens mais velhos, entratanto podemos ver que o Homer ficou sozinho lá na ponta, pode ser pois ele é o único personagem que tem pouco cabelo. Mas será que a quantidade de clusters, estão corretos? Vamos utilizar o método do cotovelo para validar =).
 
