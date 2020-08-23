@@ -141,10 +141,45 @@ Essencialmente escolher o número de clusters em um dataset é um problema muito
 Outra forma é usarmos o "Método do cotovelo", que nos ajuda a definir a melhor quantidade de clusters que podem ser encontrados, mesmo sem saber a reposta antecipadamente, tem um artigo sensacional do pizza de dados sobre isso, para acessar clique [aqui](https://medium.com/pizzadedados/kmeans-e-metodo-do-cotovelo-94ded9fdf3a9). 
 
 
+
 Bora pra prática?!!
 Pessoal, como uma boa pythonlover eu mostrarei a implementação do algoritmo através da biblioteca do python chamada [Scikit-learn](https://scikit-learn.org/stable/) e irei utilizar também um CSV que eu criei com algumas informações fictícias de alguns personagens do simpsons, para acessa-lo clique [aqui](). E logo abaixo temos a tabela com os personagens e as informações que vamos utilizar.
 
-<img src="/img/simpsons-k-means/artigo-5.png" width="85%">
+<img src="/img/simpsons-k-means/artigo-5.png" width="50%">
+
+Antes de mais nada, é necessário ler os dados, portanto utilizaremos a biblioteca Pandas para isso.
+```
+import pandas as pd
+df = pd.read_csv('data/simpsons.csv',sep=";")
+df.head()
+```
+Então nesse código, lemos o arquivo CSV cujo nome é "simpsons" e atribuimos os valores que estão neles em uma variável chamada "df", que virou um objeto tabular do tipo DataFrame que é exclusivo do Pandas. E com isso estamos pedindo para exibir as 5 primeiras linhas da nossa tabela com a função .head(), que por default exibe 5 linhas (se você quiser visualizar mais linhas, você passar por parâmetro a quantidade que você quer).
+
+Se você rodar esse código, terá a seguinte saída:
+
+<img src="/img/simpsons-k-means/artigo-7.png" width="60%">
+
+Se você quiser entender mais sobre os dados, você pode utilizar a função . describe() do pandas, que tem um resumo estatístico (mostra a média, valor máximo e minimo, desvio padrão e os quartis dos dados). Vou falar bem por cima o que esse resumo nos passou. 
+
+<img src="/img/simpsons-k-means/artigo-8.png" width="60%">
+
+Como vocês podem ver, no index de "count" ele mostra a quantidade de amostra que temos em cada uma das colunas, no nosso caso ele está mostrando que temos 9 personagens, portanto temos 9 informações sobre o cabelo, o peso e a idade. Já o "mean" indica o valor médio de cada uma das colunas (importante ressaltar que essa medida de resumo é muito sensível a outliers, ou seja valores atípicos.)
+
+```
+from sklearn.cluster import KMeans
+kmeans=KMeans(n_clusters=3)
+kmeans.fit(df.drop('Personagem',axis=1))
+
+```
+No código acima importamos o algoritmo, e instânciamos e atribuimos a uma variável chamada "kmeans". Ah! E definimos a quantidade de cluster como 3, e treinamos o modelo com o método .fit(), precisamos passar os dados dentro dos parênteses, no meu caso eu deletei a coluna com o nome dos personagens ao passar por parâmetro.
+
+E esses foram os clusters gerados pelo algorítmo:
+
+<img src="/img/simpsons-k-means/artigo-6.png" width="50%">
+
+Podemos notar que temos um cluster com os personagens mais novos, e tem um grupo de personagens mais velhos, entratanto podemos ver que o Homer ficou sozinho lá na ponta, pode ser pois ele é o único personagem que tem pouco cabelo. Mas será que a quantidade de clusters, estão corretos? Vamos utilizar o método do cotovelo para validar =).
+
+
 
 
 
