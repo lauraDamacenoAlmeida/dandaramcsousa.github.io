@@ -142,8 +142,12 @@ Outra forma é usarmos o "Método do cotovelo", que nos ajuda a definir a melhor
 
 
 
-Bora pra prática?!!
-Pessoal, como uma boa pythonlover eu mostrarei a implementação do algoritmo através da biblioteca do python chamada [Scikit-learn](https://scikit-learn.org/stable/) e irei utilizar também um CSV que eu criei com algumas informações fictícias de alguns personagens do simpsons, para acessa-lo clique [aqui](). E logo abaixo temos a tabela com os personagens e as informações que vamos utilizar.
+## Bora pra prática?!!
+
+<img src="https://media.giphy.com/media/xT5LMQ8rHYTDGFG07e/giphy.gif" width="85%">
+
+
+Pessoal, como uma boa pythonlover eu mostrarei a implementação do algoritmo através da biblioteca do python chamada [Scikit-learn](https://scikit-learn.org/stable/) e irei utilizar também um CSV que eu criei com algumas informações fictícias de alguns personagens do simpsons, para acessa-lo clique [aqui](https://github.com/lauraDamacenoAlmeida/Simpsons_K-means/tree/master/data). E logo abaixo temos a tabela com os personagens e as informações que vamos utilizar.
 
 <div align="center"><img src="/img/simpsons-k-means/artigo-5.png" width="50%" aling='center'></div>
 
@@ -223,3 +227,10 @@ E no final temos a seguinte saída:
 <img src="/img/simpsons-k-means/artigo-10.png" width="70%">
 
 Agora está mais visível os diferentes grupos nos nossos dados, e podemos observar que temos 2 outliers (representados pelo: Abbe e pelo Homer).
+
+#### Ufaa!! Muita coisa né?!
+
+Mas eu espero que vocês tenham gostado, tentei trazer os aspectos básicos do k-means e os pontos de atenção que precisamos ter com o modelo. Você pode acessar o código do modelo e das análises, clicando [aqui](https://github.com/lauraDamacenoAlmeida/Simpsons_K-means)
+Qualquer dúvida ou feedback podem me chamar no [Linkedin](https://www.linkedin.com/in/laura-damaceno/) ou no [Instagram](https://instagram.com/laura_damaceno_almeida).
+
+
