@@ -7,7 +7,7 @@ background: '/img/simpsons-k-means/1.jpg'
 ---
 
 
-Imagine-se na seguinte situação, o desenho dos simpsons tem milhares(ou seria centenas?) de personagens e você precisa vender donuts para esses personagens, parece simples né?! Mas e se eu te disser que cada um deles tem gostos diferentes, cada um deles gostam de coisas diferentes, e pode até ser que tenhama lguns que não gostam de donuts. Aí fica complicado né?! A gente passaria muitos dias (ou meses!) tentando vendê-los, e isso não é muito produtivo. 
+Imagine-se na seguinte situação, o desenho dos simpsons tem milhares(ou seria centenas?) de personagens e você precisa vender donuts para esses personagens, parece simples né?! Mas e se eu te disser que cada um deles tem gostos diferentes, cada um deles gostam de coisas diferentes, e pode até ser que tenham alguns que não gostam de donuts. Aí fica complicado né?! A gente passaria muitos dias (ou meses!) tentando vendê-los, e isso não é muito produtivo. 
 
 <img src="https://miro.medium.com/max/1400/1*4wW4eTei-_4jjFJ99pGgIw.png" width="90%">
 
@@ -25,9 +25,9 @@ No aprendizado não supervisionado a máquina precisa aprender por si mesma os p
 
 <img src="/img/simpsons-k-means/artigo-1.png" width="85%">
 
-Se você olhar bem, o modelo separou os personagens pela idade (UAAAAL!!), ou seja, personagens com idades baixas formaram um grupo de pessoas mais novos, e já personagens com idades altas formam um grupo de pessoas mais velhas, portanto clusters nada mais é que grupos Bem bacana né?! 
+Se você olhar bem, o modelo separou os personagens pela idade (UAAAAL!!), ou seja, personagens com idades baixas formaram um grupo de pessoas mais novos, e já personagens com idades altas formam um grupo de pessoas mais velhas, portanto clusters nada mais é que grupos. Bem bacana né?! 
 
-Normalmente o aprendizado não supervisioando é utilizado nos seguintes problemas:
+Normalmente o aprendizado não supervisionado é utilizado nos seguintes problemas:
 
 * **Agrupamento ou clusterização:** quando queremos agrupar os dados, de acordo com suas características ou descobrir grupos nos nossos dados, por exemplo agrupar os personagens pela idade (spoiler: Iremos focar neste grupo no artigo). Então cluster nada mais é que um grupo de objetos (personagens, pontos, clientes, etc..) similares.
 
@@ -35,7 +35,7 @@ Normalmente o aprendizado não supervisioando é utilizado nos seguintes problem
 
 Como o nosso objetivo é encontrar grupos dentro do desenho dos Simpsons, iremos utilizar algoritmos de clusterização.
 
-## Mas quais as vantagens de usar cluterização? 
+## Mas quais as vantagens de usar clusterização? 
 
 * Analise exploratória nos dados 
 
@@ -114,7 +114,7 @@ Vamos explorar como ele funciona por baixo dos panos?
 
 4. Agora, a questão é: "Como podemos deixar os nossos clusters mais perfeitos?". Nós podemos mover os centróides. Na próxima etapa, cada centro de cluster  ser atualizado para ser a média dos pontos de dados em seu cluster, é daí que vem o "means" do K-means ("means" para quem não sabe significa "média" em português).
 
-5. Precisamo calcular a distância dos pontos tudo denovo, portanto as etapas 3 e 4 são repetidas até o momento em que os centróides não mudam, aí significa que obtemos a posição ideal dos centróides. 
+5. Precisamo calcular a distância dos pontos tudo de novo, portanto as etapas 3 e 4 são repetidas até o momento em que os centróides não mudam, aí significa que obtemos a posição ideal dos centróides. 
 
 Bem simples né?!
 
@@ -126,7 +126,7 @@ Bem simples né?!
 O k-means (assim como muitos outros algoritmos de machine learning) é uma **heurística**, e com isso não temos garantia que convergirá para um **resultado ótimo**, e o resultado pode depender dos clusters iniciais. Isso significa que este algoritmo é garantido para convergir a um resultado, mas o resultado pode ser um ótimo local (ou seja, não necessariamente o melhor possível resultado). Para resolver este problema, é comum executar todo o processo, várias vezes, com diferentes condições iniciais. 
 
 
-## E como saber se ele acertou? Como avaliar oque foi gerado? 
+## E como saber se ele acertou? Como avaliar o que foi gerado? 
 
 Uma das opções é compararmos os resultados gerados com os verdadeiros resultados, se tiver disponível. Normalmente não temos esses resultados verdadeiros, então tem uma outra opção, é com base no objetivo do k-means, ou seja, vamos considerar a distância dos pontos dentro de um cluster, por exemplo: pode ser usado a análise por Silhouette, que mede o quão bem um ponto se encaixa em um cluster (se você se interessou sobre essa técnica tem um artigo bem bacana que ensina como que aplica ela, clicando [aqui](https://dev.to/giselyalves13/aprendizado-nao-supervisionado-com-k-means-106f)), além disso a média entre as distâncias pode ser usada como uma métrica de erro para o algoritmo. 
 
@@ -209,7 +209,7 @@ Ao usar a função .xlabel() e .ylabel() estamos colocando nome nos eixos do gr�
 
 <img src="/img/simpsons-k-means/artigo-9.png" width="70%">
 
-E nele conseguimos ver mais ou menos que o melhor valor pros clusters é 4, então que tal treinarmos o modelo denovo e plotarmos para ver o resultado?
+E nele conseguimos ver mais ou menos que o melhor valor pros clusters é 4, então que tal treinarmos o modelo de novo e plotarmos para ver o resultado?
 
 ```
 kmeans_2=KMeans(n_clusters=4)
