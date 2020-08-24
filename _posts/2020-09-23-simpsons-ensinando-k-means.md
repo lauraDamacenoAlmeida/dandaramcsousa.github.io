@@ -11,7 +11,7 @@ Imagine-se na seguinte situação, o desenho dos simpsons tem milhares(ou seria 
 
 <img src="https://miro.medium.com/max/1400/1*4wW4eTei-_4jjFJ99pGgIw.png" width="90%">
 
-Mas e se eu te disser que existe uma solução para esse problema, algo que possa facilitar as nossas vendas de donuts! Podemos usar um algoritmo para segmentar, ou seja, criar grupos diferentes de personagens baseados em suas características, então teríamos um grupo de personagens que não gostam de donuts, grupos de personagens são muito fãns de Dounuts, personagens crianças (que podem gostar de Dounuts de chocolate), etc.. (por fim, podemos ter vários clusters ou grupos possíveis). 
+Mas e se eu te disser que existe uma solução para esse problema, algo que possa facilitar as nossas vendas de donuts! Podemos usar um algoritmo para segmentar, ou seja, criar grupos diferentes de personagens baseados em suas características, então teríamos um grupo de personagens que não gostam de donuts, grupos de personagens são muito fãns de Dounuts, personagens crianças (que podem gostar de Dounuts de chocolate), etc... Por fim, podemos ter vários clusters ou grupos possíveis. 
 
 Então que tal entendermos como funciona um dos algoritmos que pode nos ajudar a resolver esse problema e muitos outros problemas?
 
