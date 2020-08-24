@@ -39,7 +39,7 @@ Como o nosso objetivo é encontrar grupos dentro do desenho dos Simpsons, iremos
 
 * Analise exploratória nos dados 
 
-* Geração de resumo dos dados, quando a gente não conhece eles
+* Geração de resumo dos dados
 
 * Detecção de outliers 
 
