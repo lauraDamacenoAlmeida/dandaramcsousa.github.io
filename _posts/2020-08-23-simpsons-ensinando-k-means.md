@@ -13,7 +13,7 @@ Imagine-se na seguinte situação, o desenho dos simpsons tem milhares(ou seria 
 
 Mas e se eu te disser que existe uma solução para esse problema, algo que possa facilitar as nossas vendas de donuts! Podemos usar um algoritmo para segmentar, ou seja, criar grupos diferentes de personagens baseados em suas características, então teríamos um grupo de personagens que não gostam de donuts, grupos de personagens são muito fãns de Dounuts, personagens crianças (que podem gostar de Dounuts de chocolate), etc... Por fim, podemos ter vários clusters ou grupos possíveis. 
 
-Então que tal entendermos como funciona um dos algoritmos que pode nos ajudar a resolver esse problema e muitos outros problemas?
+Então que tal entendermos como funciona um dos algoritmos que pode nos ajudar a resolver esse e muitos outros problemas?
 
 <img src="https://cosmonerd.com.br//uploads/2017/07/os-simpsons-fox-cosmonerd-post.jpg" width="90%">
 
