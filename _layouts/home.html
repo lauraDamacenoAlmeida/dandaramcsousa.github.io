@@ -26,19 +26,160 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-
-        {{ content }}
+	<!--================My Tabs Area =================-->
+	<section class="mytabs_area p_120" id="">
+		<div class="container">
+			<div class="tabs_inner">
+				<span id="pt">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#home" role="tab"
+								aria-controls="home" aria-selected="true">Experiência</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#profile" role="tab"
+								aria-controls="profile" aria-selected="false">Educação</a>
+						</li>
+					</ul>
+				</span>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel"
+						aria-labelledby="home-tab">
+						<ul class="list">
+							<li>
+								<span class="radius"></span>
+								<div class="media">
+									<div class="d-flex">
+										<p id="pt">Set 2020 - Atualmente</p>
+									</div>
+									<div class="media-body">
+										<a href="https://www.ibm.com/" target="_blank"
+											title="Abre em nova aba" rel="noopener noreferrer">
+										<h4>IBM</h4>
+										<p><span lang="en">Data Science Consultant</span><br />São Paulo, SP</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="radius"></span>
+								<div class="media">
+									<div class="d-flex">
+										<p id="pt">Agost 2020 - Set 2020</p>
+									</div>
+									<div class="media-body">
+										<a href="https://www.ibm.com/" target="_blank"
+											title="Abre em nova aba" rel="noopener noreferrer">
+										<h4>IBM</h4>
+										<p><span lang="en">Estagiária em Data Science</span><br />São Paulo, SP</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<li>
+									<span class="radius"></span>
+									<div class="media">
+										<div class="d-flex">
+											<p id="pt">Jan 2020 - Atualmente</p>
+										</div>
+										<div class="media-body">
+											<a href="https://aigirlsbr.github.io/index.html" target="_blank"
+												title="Abre em nova aba" rel="noopener noreferrer">
+											<h4>AI Girls</h4>
+											<p><span lang="en">Cofundadora</span><br /></p>
+										</div>
+									</div>
+								</li>
+								<span class="radius"></span>
+								<div class="media">
+									<div class="d-flex">
+										<p id="pt">Jul 2019 - Agost 2020</p>
+									</div>
+									<div class="media-body">
+										<a href="https://www.ibm.com/" target="_blank"
+											title="Abre em nova aba" rel="noopener noreferrer">
+										<h4>IBM</h4>
+										<p><span lang="en">Estagiária em Data Analytics</span><br />São Paulo, SP</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="radius"></span>
+								<div class="media">
+									<div class="d-flex">
+										<p id="pt">Out 2018 - Jul 2019</p>
+									</div>
+									<div class="media-body">
+										<a href="https://www.ibm.com/" target="_blank"
+											title="Abre em nova aba" rel="noopener noreferrer">
+										<h4>IBM</h4>
+										<p><span lang="en">Estagiária em DevOps</span><br />São Paulo, SP</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="radius"></span>
+								<div class="media" style="margin-top:30px">
+									<div class="d-flex">
+										<p id="pt">Jan 2018 - Set 2018</p>
+									</div>
+									<div class="media-body">
+										<a href="https://www.fcamara.com.br/" target="_blank"
+											title="Abre em nova aba" rel="noopener noreferrer">
+											<h4>FCamara</h4>
+										</a>
+										<p id="pt">Analista de teste/QA<br />São Paulo, SP</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<ul class="list">
+							<!-- <li>
+								<span class="radius"></span>
+								<div class="media">
+									<div class="d-flex">
+										<p>2020 - 2021</p>
+									</div>
+									<div class="media-body">
+										<h4><abbr title="Universidade de São Paulo">USP</abbr></h4>
+										<p id="pt">Mestrado em Inteligência Artificial<br />São
+											Paulo, SP</p>
+									</div>
+								</div>
+							</li> -->
+							<li>
+								<span class="radius"></span>
+								<div class="media">
+									<div class="d-flex">
+										<p>2017 - Atualmente</p>
+									</div>
+									<div class="media-body">
+										<h4><abbr title="Universidade Anhembi Morumbi">UAM</abbr></h4>
+										<p id="pt">Bacharelado em Ciência da Computação <br />São
+											Paulo, SP</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End My Tabs Area =================-->
+        <!-- {{ content }} -->
 
         <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
+        <!-- {% for post in site.posts limit : 5 %}
 
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             <h2 class="post-title">{{ post.title }}</h2>
             {% if post.subtitle %}
             <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-            {% else %}
-            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+            {% else %} -->
+            <!-- <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
             {% endif %}
           </a>
           <p class="post-meta">Postado por
@@ -55,7 +196,7 @@ layout: default
 
         <hr>
 
-        {% endfor %}
+        {% endfor %} -->
 
         <!-- Pager -->
         <div class="clearfix">

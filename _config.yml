@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lauradamacenoalmeida.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  lauradamacenoalmeida
 linkedin_username: laura-damaceno
+instagram_username: laura_damaceno_almeida
 author: Laura Damaceno de Almeida
 background: "/img/bg-home-2.jpeg"
 
