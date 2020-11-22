@@ -48,7 +48,7 @@ plugins:
   - jekyll-paginate
 
 sass:
-  sass_dir: _layouts/
+  sass_dir: _layouts/main.scss
 
 # Exclude from processing.
 # The following items will not be processed, by default.
