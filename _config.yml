@@ -30,7 +30,7 @@ instagram_username: laura_damaceno_almeida
 author: Laura Damaceno de Almeida
 background: "/img/bg-home-2.jpeg"
 
-google_analytics: 'UA-163090919-1'
+#google_analytics: 'UA-163090919-1'
 
 # Build settings
 #theme: jekyll-theme-clean-blog
@@ -48,7 +48,7 @@ plugins:
   - jekyll-paginate
 
 sass:
-  sass_dir: _layouts/main.css
+  sass_dir: _layouts/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
