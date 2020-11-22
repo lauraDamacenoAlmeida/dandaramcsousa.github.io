@@ -40,15 +40,15 @@ markdown:           kramdown
 paginate:           5
 paginate_path:      "/posts/page:num/"
 
-sass:
-  sass_dir: _layouts/
+
 
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-paginate
 
-
+sass:
+  sass_dir: _layouts/main.css
 
 # Exclude from processing.
 # The following items will not be processed, by default.
