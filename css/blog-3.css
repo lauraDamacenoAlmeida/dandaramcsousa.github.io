@@ -1,0 +1,11 @@
+.banner-section{
+    background:url("https://deliriumnerd.com/wp-content/uploads/2018/01/anne.jpg"); 
+    opacity: .6;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-size:cover; 
+    background-position:0;}

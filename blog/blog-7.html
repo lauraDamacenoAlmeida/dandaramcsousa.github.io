@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Laura Damaceno de Almeida"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/blog-7.css">
+
+    <link rel="shortcut icon" href="../imgs/icon.png">
+    
+    <title>Laura Damaceno de Almeida</title>
+
+</head>
+
+<body>
+    
+  <!---------------- Navegação ------------------>
+  <header>
+    <nav class="navbar shadow-sm navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../imgs/icon.png" width="50" height="50" alt="logo" >
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../palestras.html">Palestras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#experience-timeline">Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#perfil">Contatos</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Fale conosco</a>
+                </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+  <!---------------- Blog ------------------>
+
+<section class="banner-section">
+</section>
+
+<section class="post-content-section">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
+               
+                <h1 class="text-center">Entendendo Regressão Linear: as suposições por trás de tudo!
+                </h1>
+                <ul class="list-inline text-center">
+                    <li>Laura Damaceno de Almeida |</li>
+                    <li>Machine learning | Regressão Linear| Introdução |</li>
+                    <li>31, Julho de 2020 | 9 mins de leitura</li>
+                </ul>
+            </div>
+
+<div class="col-lg-9 col-md-9 col-sm-12">
+<p class="lead">A regressão linear é uma análise que avalia se uma ou mais variáveis ​​preditivas explicam a variável dependente. Os modelos lineares são paramétricos, ou seja fazem algumas suposições sobre os dados que analisa. Quando essas suposições não são atendidas, os resultados de análise de regressão podem ser enganosos e o modelo pode não ter um bom desempenho. Esse artigo vai ser diferente do que eu costumo fazer, pois é um tema que entra em um lado que eu não “manjo” muito, entretanto quando eu vi esse tema no curso que eu estava fazendo, eu achei super importante e pertinente trazer esse assunto, pois é algo que não vemos muito nos artigos escritos em português.
+</p>
+<p>Obs: Antes de seguir a leitura, eu recomendo ler o artigo que eu fiz sobre <a href="./blog-6.html" target="_blank">regressão linear</a>, para entender como é feito a inferência e os cálculos do modelo.
+</p>
+
+
+<h3>Quais são as premissas?
+</h3>
+<p>Precisamos ter em mente as premissas/suposições da regressão linear, caso contrário, o modelo falhará em fornecer bons resultados com os dados. Portanto, para um modelo bem-sucedido, é muito crucial validar essas suposições no conjunto de dados fornecido. Vamos dar uma olhadinha nas premissas:</p>
+<ul >
+    <li>O relacionamento entre a variável dependente e independente devem ser linear;
+    </li>
+    <li>Não deve haver correlação entre as variáveis independentes;
+    </li> 
+    <li>Os resíduos devem ter uma distribuição normal;
+    </li>     
+    <li>Os resíduos devem ter variância constante (homocedasticidade);
+    </li>       
+    <li>Os resíduos não devem apresentar auto-correlação;
+    </li>  
+</ul>
+<h3>E como identificar se as premissas foram violadas?
+</h3>
+<b>1- O relacionamento entre a variável dependente e independente devem ser linear;
+</b>
+<p>Uma forma de garantir essa premissa é na hora de fazer o feature engineer, uma alternativa é utilizar o cálculo de Pearson pra calcular a correlação entre os atributos independentes e a variável alvo ou utilizarmos análise gráfica da variável independentes com a alvo para selecionar quais variáveis serão fornecidas como entrada pro modelo.
+</p>
+<p>O interessante da análise gráfica é que conseguimos observar qual o tipo de relacionamento que as variáveis independentes(X) têm e analisar a contribuição da variável delas para Y ou a variável alvo, pois eu quero explicar a variabilidade de Y de acordo com o X.
+</p>
+<p>Se utilizarmos o mesmo exemplo do artigo anterior, prever as notas de matemática (você pode encontrar os códigos utilizados clicando <a href="https://github.com/lauraDamacenoAlmeida/Enem_2016" target="_blank">aqui</a>) e plotar as variáveis independente pela dependente, conseguimos obter o seguinte gráfico abaixo, onde podemos notar alguns relacionamentos lineares entre as variáveis NU_NOTA_LC, NU_NOTA_CH e NU_NOTA_CN com a variável alvo NU_NOTA_MT.
+</p>
+<img src="https://miro.medium.com/max/1400/1*8AQKqdstfuDhs1Jqd4FA-w.png" class="blog img-responsive" width="85%"><br>
+
+<p>Vale lembrar que o cálculo de Pearson retorna um valor entre 1 e -1, e quanto mais próximo de 1 há uma relação linear forte positiva, já próximo de -1 há uma relação linear forte negativa e mais próximo de 0 não relacionamento linear entre as variáveis.
+</p>
+<img src="https://miro.medium.com/max/1400/0*WqIzwZXa7hxOvdVr.png" class="blog img-responsive" width="85%"><br>
+<hr>   
+
+<b>2- Não deve haver correlação entre as variáveis independentes (multicolinearidade)
+</b>
+<p>Quando as variáveis independentes são correlacionadas entre si, temos um problema chamado multicolinearidade.
+</p>
+<p>Isso leva ao desenvolvimento de um modelo com coeficientes que possuem valores que dependem da presença de outras variáveis. Em outras palavras, teremos um modelo que mudará drasticamente se uma variável independente for removida, portanto um modelo como esse será impreciso.
+</p>
+<p>Então na hora de selecionar as variáveis independentes, escolhas as que tem uma correlação alta com a variável alvo e que não tenham correlação com outras variáveis independentes ou que tenham uma correlação muito fraca.
+</p>
+<p>Vamos para um exemplo: Conforme o exemplo que eu utilizei no artigo sobre <a href="./blog-6.html" target="_blank">regressão linear</a>, a variável independente utilizada é a Nota de matemática (NU_NOTA_MT) e se notarmos ela tem uma correlação alta com outras variáveis, agora se olharmos para uma dessas variáveis por exemplo: TP_PRESENCA_CH, que é se o aluno foi ou não na prova de ciências humanas, ela tem uma correlação alta com outras variáveis, por exemplo: TP_PRESENCA_MT, NU_NOTA_CN, NU_NOTA_CH, etc..
+</p>
+<p>Portanto vale refletir se essa variável é realmente importante pro modelo, se for, precisamos levar em consideração a correlação da variáveis TP_PRESENCA_MT, NU_NOTA_CN, NU_NOTA_CH com a variável alvo e escolher dentre elas e a TP_PRESENCA_CH qual melhor se ajusta ao modelo.
+</p>
+<img src="https://miro.medium.com/max/1400/0*5LztGTbKUd199lmm.png" class="blog img-responsive" width="80%"><br>
+<hr>
+<b>3- Os resíduos devem ter uma distribuição normal
+</b>
+<p>Isso é feito para que o erro padrão das estimativas sejam calculados corretamente.
+</p>
+<b>Mas o que são resíduos?
+</b>
+<p>Conforme o conceito explicado no meu artigo sobre <a href="./blog-6.html" target="_blank">regressão linear</a>, O resíduo representa a quantidade da variabilidade que Y que o modelo ajustado não consegue explicar. E os resíduos podem ser calculados com a seguinte fórmula:
+</p>
+<p>residuo = Y-Yˆ
+</p>
+<p>Onde Y é o valor real e Y^é o valor calculado pelo modelo.</p>
+<p>Para verificar se seus resíduos apresentam uma distribuição normal, você pode usar gráficos: histograma, X ou Q-Qplot.
+</p>
+
+<img src="https://miro.medium.com/max/1400/1*zz9rr_6JFn67WTR7W4p7RQ.png" class="blog img-responsive" width="80%"><br>
+
+
+<p>Ou realizar o teste de Shapiro-Wilk, que também mostra se existe normalidade dos resíduos, retornando o valor de p-value:
+</p>
+
+<ul >
+    <li>Se o p-valor for maior que 0,05 => resíduos com normalidade
+    </li>
+    <li>Se o p-valor for menor que 0,05 =>resíduos sem normalidade
+    </li>    
+</ul>
+<hr>
+
+<b>4- Os resíduos devem ter variância constante (homocedasticidade)
+</b>
+<p>Com a regressão é assumido que cada ponto de dados contribui com explicação igual para a variabilidade que estamos procurando modelar. Se alguns pontos de dados contribuíram com mais explicação que outros, nossa linha de regressão será puxado em direção aos pontos com mais informação.
+</p>
+<p><b>Homocedasticidade</b> é o termo para designar variância constante dos erros/ resíduos para observações distintas (Xij). Caso a suposição de homocedasticidade não seja válida, podemos dizer que:</p>
+<ul >
+    <li>Os erros padrões dos estimadores, obtidos pelo Método dos Mínimos Quadrados, são incorretos e portanto a inferência estatística não é válida.
+    </li>
+    <li>Não podemos mais dizer que os Estimadores de Mínimos Quadrados são os melhores estimadores de mínima variância para β.
+    </li>     
+</ul>
+<p>Quando não há variação constante, temos o problema de heterocedasticidade, ou seja, a variância dos erros será diferente para cada valor condicional de X. Podemos observar se há esse problema de 2 formas: Análise gráfica, ou Testes estatísticos.
+</p>
+<p>Através da análise gráfica podemos utilizar a imagem a seguir.
+</p>
+<img src="https://miro.medium.com/max/1400/1*jbPACOcXGdcHJ6lU35jSFg.png" class="blog img-responsive" width="70%"><br>
+<p>Já com os testes estatísticos pode ser utilizado: <a href="https://www4.eco.unicamp.br/docentes/gori/images/arquivos/EconometriaI/Econometria_Cap12_Heterocedasticidade.pdf" target="_blank">Teste Goldfeld-Quandt</a>, <a href="http://www.portalaction.com.br/analise-de-regressao/32-diagnostico-de-homocedasticidade" target="_blank">Teste de Breusch-Pagan </a>, <a href="https://www4.eco.unicamp.br/docentes/gori/images/arquivos/EconometriaI/Econometria_Cap12_Heterocedasticidade.pdf" target="_blank">Teste de White</a>. Não irei entrar em detalhes sobre o que seria cada um destes testes e como utilizá-los, entretanto deixarei alguns links pra caso vocês tenham interesse no assunto.
+</p>
+<hr>
+<b>5- Os resíduos não devem apresentar auto-correlação
+</b>
+<p>Esta premissa pode ser verificada graficamente, representando os resíduos em função dos valores estimados da variável dependente Y, em um gráfico residual.
+</p>
+<p>Quando há correlação nos resíduos, temos o problema conhecido como auto-correlação. A existência dela é uma violação grave das premissas do modelo linear, pois interfere diretamente na distribuição dos resíduos.
+</p>
+<p>Modelos que apresentam auto-correlação nos resíduos são claramente identificados através da análise de resíduos, podendo ser identificado quando os resíduos não se comportam de forma aleatória, ou seja, seguem um padrão, e demonstram uma falha grave na especificação do modelo para o conjunto de dados.</p>
+<p>Além da visualização gráfico, você pode validar se há auto-correlação nos resíduos, utilizando o teste estatístico chamado Durbin-Watson, que testa a hipótese nula de que os resíduos não são linearmente correlacionados automaticamente, o resultado final varia entre 0 e 4, e valores entre "1,5 < d < 2,5" mostram que não há correlação.
+</p>
+
+<hr>
+<p>Para quem quiser realizar as validações das premissas nos dados, tem esse artigo que o autor realizou essas <a href="https://towardsdatascience.com/assumptions-of-linear-regression-algorithm-ed9ea32224e1" target="_blank">validações no python </a>, e para os apaixonados por R tem um artigo sensacional escrito pela comunidade da linguagem, para acessar clique <a href="http://r-statistics.co/Assumptions-of-Linear-Regression.html" target="_blank">aqui</a>.
+</p>
+<p>Ufa!! Muita informação né?! Então nesse artigo aprendemos:
+</p>
+
+<ul >
+    <li>1- O que é uma premissa e qual a sua importância nos nossos modelos de regressão linear.
+    </li>
+    <li>2- Quais são essas premissas.
+    </li>    
+    <li>3- Quais explorações ou testes estatísticos fazer para garantir que as premissas não estão sendo violadas.
+    </li>    
+</ul>
+</div>
+
+  <!---------------- Fim post ------------------>
+
+            <div class="col-lg-3  col-md-3 col-sm-12">
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Share love</h2>
+                    <button id="swapHeart" class="btn btn-outline-danger">
+                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-toggle="toggle">
+                            <path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                          </svg>
+                        </button>
+                </div>
+                </div>
+                <div class="card" style="margin-top: 20px; width: 18rem;">
+                    <img src="../imgs/perfil.png" class="card-img-top" width="10px"/>
+                    <div class="card-body">
+                    <h5 class="card-title">Sobre a autora</h2>
+                    <p>Pyladie de coração e cientista de dados na IBM, apaixonada por IA e ciência de dados. Acredita que ambas tecnologias podem causar um impacto positivo na sociedade. </p>
+                    <a href="../index.html" class="btn btn-default" target="_blank">Veja mais</a>
+                </div>
+                </div>
+                <!-- <div class="list-group">
+                    <a class="list-group-item active" href="#"> <h4 class="list-group-item-heading">List group item heading</h4> <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> </a>
+                    <a class="list-group-item" href="#"> <h4 class="list-group-item-heading">List group item heading</h4> <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> </a>
+                    <a class="list-group-item" href="#"> <h4 class="list-group-item-heading">List group item heading</h4> <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> </a> </div> -->
+</div>
+      
+    </div> <!-- /container -->
+    </div>
+</section>
+<div><a href="../blog.html" role="button" style="float: left; margin-left: 50px; color:#D9529C; font-weight: bolder;">Voltar para a listagem</a></div>
+
+<div><a href="./blog-8.html" role="button" style="float:right; margin-right: 50px; color:#D9529C; font-weight: bolder;">Próximo</a></div>
+
+   <!--================Start footer Area =================-->
+   <!-- <footer class="footer_area p_30">
+    
+    <div class="fixed-bottom footer bg-light" >
+        <script language="Javascript">  
+            document.write("© 2020 Laura Damaceno de Almeida")
+        </script>
+        <div class="col-lg-12 col-sm-6">
+            <aside class="f_widget social_widget" style="text-align: center;">
+                <div class="f_title">
+                    <h3 id="pt">Siga-me nas redes sociais</h3>
+                </div>
+                <div class="text-center">
+                   <a href="https://github.com/lauraDamacenoAlmeida" target="_blank"
+                            title="Abre em nova aba" rel="noopener"
+                            aria-label="Github"><i class="fa fa-github"
+                                aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/laura_damaceno_almeida" target="_blank"
+                            title="Abre em nova aba" rel="noopener"
+                            aria-label="Instagram"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/laura-damaceno/" target="_blank"
+                            title="Abre em nova aba" rel="noopener"
+                            aria-label="Linkedin"><i class="fa fa-linkedin"
+                                aria-hidden="true"></i></a>
+                    <a href="https://lauradamacenoalmeida.github.io/posts/" target="_blank"
+                                title="Abre em nova aba" rel="noopener"
+                                aria-label="Medium"><i class="fa fa-medium"
+                                    aria-hidden="true"></i></a>
+                </div>
+            </aside>
+        </div>
+        </div>
+</footer> -->
+    <!--================End footer Area =================-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script>
+        $('#swapHeart').on('click', function() {
+            $(this).removeClass('btn-outline-danger').addClass('btn-danger');
+
+
+  });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.title{
+margin-top: 100px;
+margin-left: 60px;
+}
+#talks{
+    /* background-image: url(../imgs/capa.png); */
+    width: 100%;
+    height: auto; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    /* background-position: center center; */
+    background-size: cover; 
+}
+
+/* #main{
+    margin-top:100px;
+    /* margin-left: none; */
+/* }  */
+#myTabTalks{
+    margin-bottom: 30px;
+}
+.card{
+    margin-top: 10px;
+    margin-left:30px;
+    margin-bottom: 20px;
+} 
+
+.footer {
+    height: auto;
+    margin: auto;
+    text-align:center;
+    padding:10px;
+    color:gray;
+    position: relative;
+    bottom:0;
+    left: 0;
+}

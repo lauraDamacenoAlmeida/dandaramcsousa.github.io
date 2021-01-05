@@ -1,0 +1,11 @@
+.banner-section{
+    background:url("../imgs/capa-2.jpg"); 
+    opacity: .6;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-size:cover; 
+    background-position:0;}

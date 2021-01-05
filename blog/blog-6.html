@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Laura Damaceno de Almeida"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/blog-6.css">
+
+    <link rel="shortcut icon" href="../imgs/icon.png">
+    
+    <title>Laura Damaceno de Almeida</title>
+
+</head>
+
+<body>
+    
+  <!---------------- Navegação ------------------>
+  <header>
+    <nav class="navbar shadow-sm navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../imgs/icon.png" width="50" height="50" alt="logo" >
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../palestras.html">Palestras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#experience-timeline">Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#perfil">Contatos</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Fale conosco</a>
+                </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+  <!---------------- Blog ------------------>
+
+<section class="banner-section">
+</section>
+
+<section class="post-content-section">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
+               
+                <h1 class="text-center">Regressão Linear?
+                </h1>
+                <ul class="list-inline text-center">
+                    <li>Laura Damaceno de Almeida |</li>
+                    <li>Machine learning | Regressão Linear| Introdução |</li>
+                    <li>01, Abril de 2020 | 12 mins de leitura</li>
+                </ul>
+            </div>
+
+<div class="col-lg-9 col-md-9 col-sm-12" style="padding-top: 20%;">
+<p class="lead">O termo “Regressão” surgiu em 1885 com o antropólogo, matemático e estatístico Francis Galton. As primeiras aplicações do método surgiram na Antropometria, ou seja, estudo das medidas e da matemática dos corpos humanos. Ao estudar as estaturas de pais e filhos, Galton observou que filhos de pais com altura baixa em relação à média tendem a ser mais altos que seus pais, e filhos de pais com estatura alta em relação à média tendem a ser mais baixos que seus pais, ou seja, as alturas dos seres humanos em geral tendem a regredir à média.</p>
+<p class="lead">Regressão linear é um tipo de algoritmo supervisionado, portanto antes de entender como funciona o algoritmo é importante conhecer o que seria aprendizado supervisionado.
+</p>
+
+
+<h3>Conceitos importantes </h3>
+<p>Antes de prosseguir, há alguns conceitos importantes que precisam estar bem claros na sua mente.                </p>
+                <ul >
+                    <li><b>Variável independente ou preditora:</b> é aquela que será passada para o modelo, tendo influência na variável que queremos encontrar. Por exemplo: Se queremos prever as vendas de sorvete, a estação do ano pode interferir nas vendas.</li>
+                    <li><b>Variável alvo ou dependente:</b>é a variável que queremos prever. No exemplo acima seria as vendas de sorvete.</li>    
+                </ul>
+<h3>Aprendizado supervisionado?</h3>
+
+<p>O aprendizado supervisionado é aplicado quando tenta encontrar a relação entre a variável de alvo e as variáveis independentes. Uma das características mais importantes neste aprendizado é que os dados usados no treino do modelo devem ser “rotulados”, ou seja, nos dados de treino eu preciso ter os dados anotados com o valores corretos e nós sabemos do resultado de saída. Esse tipo de aprendizado é aplicado em 2 tipos de problemas: Classificação e Regressão. Um modelo de machine learning aprende os padrões dos dados e cria matematicamente uma função para gerar previsões, portanto pode-se afirmar que em algoritmos supervisionados a função para gerar os valores de resposta é:
+</p>
+<img src="https://miro.medium.com/max/1288/0*yylfN9osCM_tKhw_" class="blog img-responsive"><br>
+
+<p>Onde:
+</p>
+<ul >
+    <li>f(x): é a função que o algoritmo irá criar.
+    </li>
+    <li>x: é a variável independente, ou seja, os atributos.
+    </li> 
+    <li>yˆ: a saída estimada, com base na função.
+    </li>       
+</ul>
+<hr>   
+
+<h3>Regressão Linear
+</h3>
+
+<p>Regressão linear é um algoritmo supervisionado de machine learning usado para estimar o valor de algo baseado em uma série de outros dados históricos, portanto olhando para o passado você pode “prever” o futuro.Existem 2 tipos de regressão linear: simples e a múltipla.
+</p>
+<ul >
+    <li><b>Regressão linear simples:</b> refere-se quando temos somente uma variável independente (X) para fazermos a predição.</li>
+    <li><b>Regressão linear múltipla:</b> refere-se a várias variáveis independentes (X)usadas para fazer a predição.</li>    
+</ul>
+<p>E com isso a forma de representação de cada regressão varia conforme o tipo, como por exemplo a representação gráfica em uma regressão linear simples é uma reta em um plano de 2 dimensões, já em uma regressão linear múltipla, sua representação é feita em um plano que pode ser nD.
+</p>
+<img src="https://miro.medium.com/max/1400/1*kYeEvedeSMcI2ppvLSDaKw.png" class="blog img-responsive" width="80%"><br>
+<hr>   
+
+<h3>Onde podemos usar regressão linear?</h3>
+<p>Esse algoritmo pode ser utilizado em qualquer problema, onde as variáveis de entrada e saída são valores contínuos. Por exemplo:
+</p>
+<ul >
+    <li>Prever as vendas de um determinado produto
+    </li>
+    <li>Setor imobiliário (valor de um imóvel)
+    </li> 
+    <li>Calcular a expectativa de vida de um país
+    </li>  
+    <li>Calcular a pressão sanguínea de um paciente
+    </li>         
+</ul>
+<hr>   
+<h3>Quando aplicar?</h3>
+
+<p>Esse tipo de algoritmo é aplicado quando há uma boa correlação linear (positiva ou negativa) entre os dados, ou seja, quando o relacionamento ou associação entre os dados pode ser definido com uma reta.
+</p>
+<h3>Mas o que é correlação?
+</h3>
+
+<p>É uma medida estatística utilizada para calcular a associação entre os pontos.
+</p>
+<p><b>Correlação Linear de Pearson:</b>mede a correlação linear entre a nuvem de pontos. O resultado varia entre -1 e 1:</p>
+<ul >
+    <li>-1: Correlação linear perfeita negativa
+    </li>
+    <li>1: Correlação linear perfeita positiva
+    </li> 
+    <li>0: Não tem correlação linear
+    </li>        
+</ul>
+<img src="https://miro.medium.com/max/1400/1*7hpPonf1E0rUJ6xETLySKQ.png" class="blog img-responsive" width="70%"><br>
+<hr>
+<p>O objetivo da regressão linear é encontrar uma reta que consiga definir bem os dados e minimizar a diferença entre o valor real e a saída calculada pelo modelo. A função que representa bem a regressão linear é dado a seguir:
+</p>
+<img src="https://miro.medium.com/max/1400/0*E-6Yud1vgsM6pV6u" class="blog img-responsive">
+    
+<p>Onde w0 (representa o ponto inicial da reta)e w1 (representa a inclinação da reta, ou seja, o quanto que essa variável cresce conforme o tempo passa) são variáveis que o algoritmo calcula para poder definir a reta, e x1 seria o atributo de entrada que foi dada ao modelo. E com esses valores ele consegue fazer as previsões.
+</p>
+<p>Por exemplo, vamos supor que o algoritmo calculou o valor de w0 e w1 e definiu que seria respectivamente 0 e 10. O valor de x1 será 5.1, portanto o cálculo realizado será:
+</p>
+<p>Yˆ= f(x) =0 + 10 * 5.1</p>
+<p>Yˆ= 51
+</p>
+<p>Esse cálculo será realizado para todas as previsões que serão realizadas, portanto se plotar essas previsões, chegará no seguinte gráfico:
+</p>
+<img src="https://miro.medium.com/max/1400/0*ZKy4C0QdqdqCO9Ea" class="blog img-responsive" width="70%">
+<br><p>Os pontos azuis representam os valores reais, já a reta representa a reta estimada pelo modelo. Note que no ponto circulado em vermelho é o valor real, da variável que calculamos anteriormente, e chegamos a um valor de 51, já o valor real é de mais ou menos 49, portanto há um erro no valor estimado do modelo.
+</p>
+<p>Se você fizer o valor real menos o valor previsto, poderá obter o erro/ resíduo. Portanto a equação ficaria:
+</p>
+<p>residuo = Y - Yˆ</p>
+<p>No nosso caso o resíduo é -2 para esse ponto em específico.O resíduo representa a quantidade da variabilidade que Y que o modelo ajustado não consegue explicar. Os resíduos contém informação sobre o motivo do modelo não ter se ajustado bem aos dados.
+</p>
+<hr>
+
+<h3>Métricas de validação
+</h3>
+<b>SQR (Soma dos Quadrados dos Resíduos)
+</b>
+<p>Soma dos quadrados dos resíduos, mostra a variação de Y que não é explicada pelo modelo elaborado. É a medida da variação que não pode ser explicada.
+</p>
+<img src="https://miro.medium.com/max/1400/1*YC_sAM5AZFmkNeol4BdynA.png" class="blog img-responsive" width="70%">
+<br><b>R²
+</b>
+<p>O R² é uma medida estatística de quão próximos os dados estão da linha de regressão ajustada. Ele também é conhecido como o coeficiente de determinação ou o coeficiente de determinação múltipla para a regressão múltipla.
+</p>
+<p>O R² está sempre entre 0 e 1:</p>
+<ul >
+    <li>0: indica que o modelo não explica nada da variabilidade dos dados de resposta ao redor de sua média.
+    </li>
+    <li>1: indica que o modelo explica toda a variabilidade dos dados de resposta ao redor de sua média.
+    </li>     
+</ul>
+<br><b>MAE (Erro Médio absoluto)
+</b>
+<p>O erro médio absoluto (MAE) é a métrica de erro de regressão mais simples de entender. Ele calcula o valor dos resíduos para cada um dos pontos e depois é tirado a média de todos esses resíduos.</p>
+<img src="https://miro.medium.com/max/1400/0*nruMtzDtZjauyUQ7.jpg" class="blog img-responsive" width="70%">
+<br><b>MSE (Média dos erros ao quadrado)
+</b>
+<p>O MSE é apenas o cálculo do erro mas elevamos ao quadrado.
+</p>
+<img src="https://miro.medium.com/max/1400/1*EI9mQhCNLrdgTXVAp-6tXg.png" class="blog img-responsive" width="70%">
+<p>Por estarmos elevando o resíduo ao quadrado, não podemos comparar ele com o valor de MAE, pois ele sempre será maior portanto faz mais sentido comparar o MSE com o valor do MSE de outro modelo.
+</p>
+<hr>
+<h3>Exemplo com python</h3>
+<p>Neste exemplo tentaremos prever a nota de matemática das pessoas que fizeram o Enem em 2016.
+</p>
+<p>Essa é a carinha do dataframe:
+</p>
+<img src="https://miro.medium.com/max/1400/1*nrRfQk4j8s80QV3YjfOO0w.png" class="blog img-responsive" width="85%">
+<p>No dataframe há 167 colunas e 13730 linhas, mas será que vamos usar todas essas colunas para prever a nota de matemática?
+</p>
+<p>Após uma série de análises (que você poderá visualizar no repositório do <a href="https://github.com/lauraDamacenoAlmeida/Enem_2016" target="_blank">Github</a>), eu fui descartando algumas colunas como por exemplo: Número da inscrição, ano da prova, município de residência, Estado, etc.
+</p>
+<p>Mas uma forma mais fácil de selecionar as variáveis independentes para o modelo de regressão, é calcular a correlação entre elas e a variável alvo.
+</p>
+<img src="https://miro.medium.com/max/1400/1*f2FBUtRcTMy4TTaQ7wu1Lw.png" class="blog img-responsive" width="85%">
+
+<p>E com isso podemos selecionar as seguintes variáveis: ‘NU_NOTA_CN’,’ NU_NOTA_CH’, ’NU_NOTA_LC’, ’NU_NOTA_REDACAO’.
+</p>
+<p>Para criar o algoritmo de regressão linear, irei utilizar a biblioteca <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html" target="_blank">scikit-learn.</a>
+</p>
+<img src="https://miro.medium.com/max/1400/1*5fd-_aDlktCV4fiboVqJDA.png" class="blog img-responsive" width="85%">
+
+<p>Neste trecho, eu instanciei o modelo de regressão linear, e declarei as variáveis que serão utilizadas. Após isso eu quebrei ambas variáveis em treino e teste, onde 30% dos dados ficou para teste e 70% ficou para treino
+</p>
+<p>E para gerar o treinamento do modelo é só utilizar a função .fit( ), passando por parâmetro os dados X e Y de treino.A função .score( ) retorna o valor de R²:
+</p>
+
+<img src="https://miro.medium.com/max/1400/1*_Xu84pVXwtlR2iMLiW21CQ.png" class="blog img-responsive" width="85%">
+<p>Para testar o modelo é utilizado a função .predict( ), passando por parâmetro os dados X de teste.
+</p>
+<img src="https://miro.medium.com/max/1400/1*dpJ7J64QYXf70cTEIh6Rog.png" class="blog img-responsive" width="85%">
+<br><b>Se lembram da equação da regressão linear?
+</b>
+<img src="https://miro.medium.com/max/1400/0*E-6Yud1vgsM6pV6u" class="blog img-responsive" width="85%">
+<p>Para pegar os valores de w0, é utilizado a função .intercept_, já os valores de w1 pode ser adquirido com a função .coef_.
+</p>
+<img src="https://miro.medium.com/max/1400/1*hlBJYU3Y2rDot4KzzXQvuQ.png" class="blog img-responsive" width="85%">
+<br><b>Como ficaria a equação no nosso modelo?
+</b>
+<pre>
+    <code>
+        f(NU_NOTA_CN, NU_NOTA_CH, NU_NOTA_LC, NU_NOTA_REDACAO) = -5.255134 + 0.335875 * Nota de ciências naturais -0.135485 * Nota de ciências humanas + 0.560740 * Nota de LC + 0.083826 * Nota da redação
+    </code>
+</pre>
+<b>Mas Laura porquê você selecionou as variáveis pro modelo?
+</b>
+<img src="https://miro.medium.com/max/1000/0*a6TED5gkNCv3YS_B.gif" class="blog img-responsive" >
+<p>Quando fazemos a seleção de features evitamos que atributos irrelevantes podem causar um efeito negativos no modelo, e além disso evitar a maldição da dimensionalidade, portanto à medida que aumenta o número de dimensões de seus dados, eles se tornam mais esparsos, o que pode dificultar a obtenção de um padrão.
+</p>
+<p>Pois bem, mas vamos testar com as 15 features que a gente plotou na matriz de confusão: ‘TP_ESCOLA’,’TP_PRESENCA_CH’,’TP_PRESENCA_CN’,’TP_PRESENCA_LC’,’NU_IDADE’,’TP_ST_CONCLUSAO’, ’TP_ANO_CONCLUIU’, ‘TP_ENSINO’,’IN_TREINEIRO’,’NU_NOTA_CN’,’NU_NOTA_CH’,’NU_NOTA_LC’,’TP_STATUS_REDACAO’,’NU_NOTA_REDACAO’
+</p>
+<img src="https://miro.medium.com/max/1400/1*-_jxAiHtpOsst05vNyDnnA.png" class="blog img-responsive" width="85%">
+<img src="https://miro.medium.com/max/1400/1*4hMKRYC3fWcyZtMNJ1JbqQ.png" class="blog img-responsive" width="85%">
+<p>Vocês perceberam que o resultado de R² é o mesmo que com a seleção de atributos que fizemos anteriormente? Olha só, com 5 features conseguimos ter o mesmo resultado ao utilizar 15 features, perceberam a diferença?
+</p>
+<hr>
+<p>Então foi isso galera, para acessar o código utilizado neste artigo basta clicar <a href="https://github.com/lauraDamacenoAlmeida/Enem_2016/blob/master/enem2016.ipynb" target="_blank">aqui!</a> Qualquer dúvida ou feedback podem me chamar!
+</p>
+</div>
+
+  <!---------------- Fim post ------------------>
+
+            <div class="col-lg-3  col-md-3 col-sm-12">
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Share love</h2>
+                    <button id="swapHeart" class="btn btn-outline-danger">
+                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-toggle="toggle">
+                            <path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                          </svg>
+                        </button>
+                </div>
+                </div>
+                <div class="card" style="margin-top: 20px; width: 18rem;">
+                    <img src="../imgs/perfil.png" class="card-img-top" width="10px"/>
+                    <div class="card-body">
+                    <h5 class="card-title">Sobre a autora</h2>
+                    <p>Pyladie de coração e cientista de dados na IBM, apaixonada por IA e ciência de dados. Acredita que ambas tecnologias podem causar um impacto positivo na sociedade. </p>
+                    <a href="../index.html" class="btn btn-default" target="_blank">Veja mais</a>
+                </div>
+                </div>
+                <!-- <div class="list-group">
+                    <a class="list-group-item active" href="#"> <h4 class="list-group-item-heading">List group item heading</h4> <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> </a>
+                    <a class="list-group-item" href="#"> <h4 class="list-group-item-heading">List group item heading</h4> <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> </a>
+                    <a class="list-group-item" href="#"> <h4 class="list-group-item-heading">List group item heading</h4> <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> </a> </div> -->
+</div>
+      
+    </div> <!-- /container -->
+    </div>
+</section>
+<div><a href="../blog.html" role="button" style="float: left; margin-left: 50px; color:#D9529C; font-weight: bolder;">Voltar para a listagem</a></div>
+
+<div><a href="./blog-7.html" role="button" style="float:right; margin-right: 50px; color:#D9529C; font-weight: bolder;">Próximo</a></div>
+
+   <!--================Start footer Area =================-->
+   <!-- <footer class="footer_area p_30">
+    
+    <div class="fixed-bottom footer bg-light" >
+        <script language="Javascript">  
+            document.write("© 2020 Laura Damaceno de Almeida")
+        </script>
+        <div class="col-lg-12 col-sm-6">
+            <aside class="f_widget social_widget" style="text-align: center;">
+                <div class="f_title">
+                    <h3 id="pt">Siga-me nas redes sociais</h3>
+                </div>
+                <div class="text-center">
+                   <a href="https://github.com/lauraDamacenoAlmeida" target="_blank"
+                            title="Abre em nova aba" rel="noopener"
+                            aria-label="Github"><i class="fa fa-github"
+                                aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/laura_damaceno_almeida" target="_blank"
+                            title="Abre em nova aba" rel="noopener"
+                            aria-label="Instagram"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/laura-damaceno/" target="_blank"
+                            title="Abre em nova aba" rel="noopener"
+                            aria-label="Linkedin"><i class="fa fa-linkedin"
+                                aria-hidden="true"></i></a>
+                    <a href="https://lauradamacenoalmeida.github.io/posts/" target="_blank"
+                                title="Abre em nova aba" rel="noopener"
+                                aria-label="Medium"><i class="fa fa-medium"
+                                    aria-hidden="true"></i></a>
+                </div>
+            </aside>
+        </div>
+        </div>
+</footer> -->
+    <!--================End footer Area =================-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script>
+        $('#swapHeart').on('click', function() {
+            $(this).removeClass('btn-outline-danger').addClass('btn-danger');
+
+
+  });
+
+    </script>
+</body>
+</html>

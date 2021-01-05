@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Laura Damaceno de Almeida"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/blog-3.css">
+
+    <link rel="shortcut icon" href="../imgs/icon.png">
+    
+    <title>Laura Damaceno de Almeida</title>
+
+</head>
+
+<body>
+    
+  <!---------------- Navegação ------------------>
+  <header>
+    <nav class="navbar shadow-sm navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../imgs/icon.png" width="50" height="50" alt="logo" >
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../palestras.html">Palestras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#experience-timeline">Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#perfil">Contatos</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Fale conosco</a>
+                </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+  <!---------------- Blog ------------------>
+
+<section class="banner-section">
+</section>
+
+<section class="post-content-section">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
+               
+                <h1 class="text-center">Gerando wordcloud com os tweets sobre a série “Anne with an E”</h1>
+                <ul class="list-inline text-center">
+                    <li>Laura Damaceno de Almeida |</li>
+                    <li>NLP |Text mining |</li>
+                    <li>13, Fevereiro de 2020 | 7 mins de leitura</li>
+                </ul>
+            </div>
+
+<div class="col-lg-9 col-md-9 col-sm-12" style="margin-top: 20px; padding-top: 20px;">
+                <p class="lead">“Nós, mulheres, poderosas e sagradas, declaramos nesta noite santificada que nossos corpos divinos pertencem a nós mesmas. Escolheremos a quem amar e em quem confiar. Caminharemos nesta Terra com graça e respeito. Sempre teremos orgulho do nosso grande intelecto. Honraremos nossas emoções para que nossos espíritos triunfem. E se algum homem nos desmerecer, mostraremos onde fica a porta. Indestrutível é a nossa força. E livre é a nossa imaginação.” (Anne with an E)</p>
+
+                <!-- <h3>O que é chatbot?</h3> -->
+<!-- 
+                 <div class="well ">
+                    <small>This is image</small>
+                </div> -->
+<p>Já vamos iniciar com essa frase SENSACIONAL dita pela personagem mais incrivel de todos os tempos: a Anne,a série vem ganhando cada vez mais espaço na mídia por falar de assuntos importantes de uma forma sensível e sutil, como por exemplo: racismo, feminismo e auto aceitação, além de nos fazer refletir sobre como as simples coisas do mundo podem ser magníficas e que com imaginação e bondade, podemos passar por todas a situações da vida.</p>
+<p>Mas antes de partimos pra mão na massa, precisamos entender alguns conceitos básicos. (então segura a emoção um pouquinho!).</p>
+
+<h3>O que é NLP (Natural Language Processing)?</h3>
+
+<p>NLP ou Linguagem de processamento natural é um ramo da inteligência artificial que se dedica a entender a relação da linguagem humana (falada, escrita) e a linguagem de máquina. E eu resolvi fazer um wordcloud ou uma nuvem de palavras com os tweets dos usuários sobre a série “Anne with an E”. P.S: Eu disponibilizei os códigos usados nesse artigo no meu repositório do <a href="https://github.com/lauraDamacenoAlmeida/Twitter_Analysis" target="_blank" > Github.</a></p>
+
+<hr>
+<h3>O que é um wordcloud?</h3>
+<img src="https://amueller.github.io/word_cloud/_images/a_new_hope.png" class="blog img-responsive" width="70%">
+
+<p><a href="https://github.com/amueller/word_cloud" target="_blank" >Wordcloud </a> ou nuvem de palavras é muito utilizada na exploração dos textos, para entender melhor quais palavras são frequentes nas frases, e assim realizar os possíveis tratamentos nelas ou entender melhor por exemplo: o que seus usuários ou clientes estão comentando sobre um determinado produto ou empresa.</p>
+<br>
+<h3>Vantagens de utilizar wordcloud nas análises</h3>
+
+<p>Podemos <b>analisar milhares de feedbacks</b> de texto e com ele <b>levantar os termos mais citados </b>, que nos ajudam a entender:</p>
+
+<ul>
+    <li>Pontos de sua marca que encantam clientes;</li>
+    <li>Itens que não atendem as necessidades do seu público;</li>
+    <li>Relacionamentos problemáticos durante a jornada de compras;</li>
+
+</ul>
+<p>E com tudo isso teremos os tópicos mais importantes referentes ao negócio e priorizar quais deles são mais importantes de priorizar, ou seja, tomamos <b>decisões mais assertivas</b>.</p>
+
+<h3>Extração dos tweets:</h3>
+
+<p>Para extrair tweets do Twitter você precisa ter uma conta no <a href="https://developer.twitter.com/" target="_blank" >Twitter developer</a> instalar a biblioteca <a href="https://pypi.org/project/TwitterSearch/" target="_blank" >TwitterSearch </a>, com ela podemos conectar com a API do Twitter para realizar essa extração. (vou deixar no final desse artigo a recomendação de um artigo excelente para a geração da API Key e os tokens)</p>
+<pre>
+    <code>
+        def generate_tweet(key,secret,token,token_secret, pesquisa_tweet, language):
+        try:
+            tweets = TwitterSearch(
+                consumer_key = key,
+                consumer_secret = secret,
+                access_token = token,
+                access_token_secret = token_secret
+            )
+            pesquisa = TwitterSearchOrder()
+            pesquisa.set_keywords([pesquisa_tweet])
+            pesquisa.set_language(language)
+            tweetss = []
+    
+            for tweet in tweets.search_tweets_iterable(pesquisa):
+                tweetss.append(tweet)
+    
+            with open('tweets.json', 'w') as arq:
+                json.dump(tweetss, arq, indent=2)
+            
+        except TwitterSearchException as e:
+            print(e)
+    </code>
+  </pre>
+<p>Para fazer um filtro sobre um determinado assunto, usamos o método “.set_keywords()” e podemos filtrar a língua dos tweets com o método “.set_language()” Neste meu método eu crio um arquivo chamado “tweets.json” para armazenar todos esses tweets que eu filtrei, onde eu carrego ele no meu notebook transformando-o em um Dataframe para ficar mais fácil a manipulação.</p>
+
+<h3>Pré-processamento:</h3>
+
+<p>É bem importante fazermos os pré processamentos nos tweets, pois grande parte deles vai vir com “stop words” ou palavras consideradas irrelevantes para o nosso processamento (preposição, artigos e pronomes),podemos remover os acentos nas palavras, espaços a mais e por aí vai. Ou seja, neste pré-processamento nós transformamos esses dados não estruturados em estruturados e em representações multi-dimensionais.</p>
+<p>Por exemplo a frase:</p>
+<i>O Batman é melhor que o superman</i>
+
+<p>Após esse pré-processamento teremos:</p>
+<i>Batman melhor Superman</i><br>
+
+<p>Ou seja nosso modelo de NLP ou nossas análises vão poder focar nas palavras que realmente são importantes para o negócio. Para isso eu criei um método para a remoção de acentos, números e espaços.</p>
+<p>Para isso eu criei um método para a remoção de acentos, números e espaços.</p>
+<pre>
+    <code>
+        def removerAcentosECaracteresEspeciais(frase):
+    
+        frase_sem_acento = unidecode.unidecode(frase) #remove acentos
+        # Usa expressão regular para retornar a palavra apenas com números, letras e espaço
+        return re.sub('[^a-zA-Z0-9 \\\]', '', frase_sem_acento)
+    </code>
+  </pre>
+<p>Stop words pode afetar no nosso wordcloud pois esse tipo de visualização pega quais frases são mais frequentes dentre todas e com certeza as palavras “e, com, que, o” são bem frequentes. Neste método eu estou gerando tokens nas frases para que possa facilitar a stop words e algumas pontuações (‘,’’.’, ’#’, etc..).</p>
+<pre>
+    <code>
+        frase_processada = list()
+        def tokenize_frase(frase):
+            palavras_texto = frase.lower()
+            palavras_texto = token_pontuacao.tokenize(frase)
+            palavra = []
+            stopwords = nltk.corpus.stopwords.words('portuguese')
+            for i in palavras_texto:
+                if not i.isnumeric() and i.lower() not in stopwords and i not in pontuacao:
+                    palavra.append(i.lower())
+            frase_processada.append(' '.join(palavra))
+            
+        def preprocess(data):
+            data  = removerAcentosECaracteresEspeciais(data)
+            tokenize_frase(data)
+    </code>
+  </pre>
+<h3>Gerando o wordcloud</h3>
+<p>Para gerar o Wordcloud precisamos passar uma lista de palavras, portanto eu gerei uma lista partir das nossas frases pré processadas chamada “todas_palavras”.</p>
+<p>Para gerar um wordcloud precisamos instanciar esse objeto “WordCloud( )” e depois usamos o comando “.generate()” para gerar esse wordcloud. Portanto nosso código ficaria assim: <b>word_cloud = WordCloud( ).generate(todas_palavras)</b></p>
+<p>Para exibir essa nuvem de palavras usamos os seguintes comandos: <b>plt.imshow(word_cloud, interpolation=”bilinear”) plt.show() </b>. Eu criei um método para que possamos reutilizar nosso wordcloud de uma forma mais fácil, mas você pode optar por não utilizar métodos.</p>
+<pre>
+    <code>
+    def wordcloud_tweets(texto, coluna_texto):
+        todas_palavras = ' '.join([texto for texto in texto[coluna_texto]]) #lista contendo todas as frases
+    
+        word_cloud = WordCloud(width=800, height=500,max_font_size=110).generate(todas_palavras)
+        plt.figure(figsize=[10,10])
+        plt.imshow(word_cloud, interpolation="bilinear")
+        plt.title('Wordcloud dos tweets sobre a série Anne with an E')
+    
+        plt.axis("off")
+        plt.show()
+    
+    wordcloud_tweets(tweets_filme,'tratamento_1')
+    </code>
+  </pre>
+<p>E o seu resultado deve ser parecido com este:</p>
+<img src="https://miro.medium.com/max/1400/1*C0svep__DYmlOAtzxHJesA.png" class="blog img-responsive" width="70%">
+
+<p>Antes de finalizar, vale ressaltar que o wordcloud é uma excelente ferramenta de visualização que facilita a análise dos textos ou text analysis, permitindo a visualização da distribuição de frequência das palavras e assim podemos melhorar o nosso pré processamento ou o entendimento dos nossos usuários. E para acessarem o artigo que ensina a gerar os tokens, <a href="https://minerandodados.com.br/twitter-com-python/" target="_blank" >clique aqui.</a></p>
+<p>E por isso é tudo pessoal!!</p>
+<img src="https://miro.medium.com/max/776/1*lv_3ooWwCkzrzevc_TTAmA.gif" class="blog img-responsive">
+<p>Aproveita e me segue nas redes sociais para companhar mais de perto os meus trabalhos ;), no <a href="https://www.linkedin.com/in/laura-damaceno/" target="_blank" >Linkedin</a> e <a href="https://www.instagram.com/laura_damaceno_almeida/" target="_blank" >Instagram</a></p>
+
+</div>
+
+  <!---------------- Fim post ------------------>
+
+            <div class="col-lg-3  col-md-3 col-sm-12">
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Share love</h2>
+                    <button id="swapHeart" class="btn btn-outline-danger">
+                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-toggle="toggle">
+                            <path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                          </svg>
+                        </button>
+                </div>
+                </div>
+                <div class="card" style="margin-top: 20px; width: 18rem;">
+                    <img src="../imgs/perfil.png" class="card-img-top" width="10px"/>
+                    <div class="card-body">
+                    <h5 class="card-title">Sobre a autora</h2>
+                    <p>Pyladie de coração e cientista de dados na IBM, apaixonada por IA e ciência de dados. Acredita que ambas tecnologias podem causar um impacto positivo na sociedade. </p>
+                    <a href="../index.html" class="btn btn-default" target="_blank">Veja mais</a>
+                </div>
+                </div>
+                <!-- <div class="list-group">
+                    <a class="list-group-item active" href="#"> <h4 class="list-group-item-heading">List group item heading</h4> <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> </a>
+                    <a class="list-group-item" href="#"> <h4 class="list-group-item-heading">List group item heading</h4> <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> </a>
+                    <a class="list-group-item" href="#"> <h4 class="list-group-item-heading">List group item heading</h4> <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> </a> </div> -->
+</div>
+      
+    </div> <!-- /container -->
+    </div>
+</section>
+<div><a href="../blog.html" role="button" style="float: left; margin-left: 50px; color:#D9529C; font-weight: bolder;">Voltar para a listagem</a></div>
+
+<div><a href="./blog-4.html" role="button" style="float:right; margin-right: 50px; color:#D9529C; font-weight: bolder;">Próximo</a></div>
+
+   <!--================Start footer Area =================-->
+   <!-- <footer class="footer_area p_30">
+    
+    <div class="fixed-bottom footer bg-light" >
+        <script language="Javascript">  
+            document.write("© 2020 Laura Damaceno de Almeida")
+        </script>
+        <div class="col-lg-12 col-sm-6">
+            <aside class="f_widget social_widget" style="text-align: center;">
+                <div class="f_title">
+                    <h3 id="pt">Siga-me nas redes sociais</h3>
+                </div>
+                <div class="text-center">
+                   <a href="https://github.com/lauraDamacenoAlmeida" target="_blank"
+                            title="Abre em nova aba" rel="noopener"
+                            aria-label="Github"><i class="fa fa-github"
+                                aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/laura_damaceno_almeida" target="_blank"
+                            title="Abre em nova aba" rel="noopener"
+                            aria-label="Instagram"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/laura-damaceno/" target="_blank"
+                            title="Abre em nova aba" rel="noopener"
+                            aria-label="Linkedin"><i class="fa fa-linkedin"
+                                aria-hidden="true"></i></a>
+                    <a href="https://lauradamacenoalmeida.github.io/posts/" target="_blank"
+                                title="Abre em nova aba" rel="noopener"
+                                aria-label="Medium"><i class="fa fa-medium"
+                                    aria-hidden="true"></i></a>
+                </div>
+            </aside>
+        </div>
+        </div>
+</footer> -->
+    <!--================End footer Area =================-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script>
+        $('#swapHeart').on('click', function() {
+            $(this).removeClass('btn-outline-danger').addClass('btn-danger');
+
+
+  });
+
+    </script>
+</body>
+</html>
